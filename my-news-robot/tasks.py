@@ -13,7 +13,7 @@ browser = Selenium()
 def minimal_task():
     open_browser()
     articles = extract_articles()
-    email_task.send_email("vitafull96@gmail.com", articles)
+    email_task.send_email("example@gmail.com", articles)
     close_browser()
 
 def open_browser():
