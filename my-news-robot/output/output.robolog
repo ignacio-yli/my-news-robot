@@ -1,0 +1,1083 @@
+V 0.0.4
+T 2025-03-03T12:42:03.007+00:00
+ID 1|e838f269-f82c-11ef-99bc-cc28aa6c3fbb
+I "sys.platform=win32"
+I "python=3.12.8 | packaged by conda-forge | (main, Dec  5 2024, 14:06:27) [MSC v.1942 64 bit (AMD64)]"
+M a:"tasks.py - minimal_task"
+SR a|0.007
+M c:"Collect tasks"
+M d:"setup"
+M e:""
+P b:c|d|e|e|0
+ST b|0.009
+M f:"regular"
+M g:"\nCollecting task minimal_task from: c:\\Users\\PerezLai\\Desktop\\RPA\\my-news-robot\\tasks.py\n"
+C f|g|0.01
+M h:"stderr"
+M i:"2025-03-03 14:42:03,915 - RPA.core.certificates - INFO - Truststore injection done, using system certificate store to validate HTTPS.\n"
+C h|i|0.909
+M k:"Selenium.__init__"
+M l:"RPA.Browser.Selenium"
+M m:"C:\\ProgramData\\sema4ai\\ht\\a81d537_c5e81ff_691db988\\Lib\\site-packages\\RPA\\Browser\\Selenium.py"
+P j:k|l|m|e|241
+M n:"METHOD"
+SE j|n|3.029
+M o:"args"
+M p:"tuple"
+M q:"()"
+EA o|p|q
+M r:"kwargs"
+M s:"dict"
+M t:"{}"
+EA r|s|t
+M u:"PASS"
+EE n|u|3.069
+SE j|n|3.069
+EA o|p|q
+EA r|s|t
+EE n|u|3.113
+ET u|e|3.113
+M w:"minimal_task"
+M x:"tasks"
+M y:"c:\\Users\\PerezLai\\Desktop\\RPA\\my-news-robot\\tasks.py"
+M z:null
+P v:w|x|y|z|13
+ST v|3.114
+M A:"============================ "
+C f|A|3.114
+M B:"Running: "
+C f|B|3.114
+M C:"task_name"
+C C|w|3.114
+M D:" =============================\n"
+C f|D|3.114
+SE v|n|3.115
+M F:"open_browser"
+P E:F|x|y|e|19
+SE E|n|3.115
+M H:"wrapper"
+M I:"RPA.Browser.common"
+M J:"C:\\ProgramData\\sema4ai\\ht\\a81d537_c5e81ff_691db988\\Lib\\site-packages\\RPA\\Browser\\common.py"
+P G:H|I|J|e|33
+SE G|n|3.115
+M K:"(<RPA.Browser.Selenium.Selenium object at 0x00000190E23619D0>, 'https://www.sciencedaily.com/')"
+EA o|p|K
+EA r|s|t
+P L:H|I|J|e|36
+M M:"int"
+M N:"1"
+R L|M|N|6.929
+EE n|u|6.929
+EE n|u|6.929
+M P:"extract_articles"
+P O:P|x|y|e|27
+SE O|n|6.929
+M R:"SeleniumLibrary.find_elements"
+M S:"SeleniumLibrary"
+M T:"C:\\ProgramData\\sema4ai\\ht\\a81d537_c5e81ff_691db988\\Lib\\site-packages\\SeleniumLibrary\\__init__.py"
+P Q:R|S|T|e|771
+SE Q|n|6.929
+M U:"locator"
+M V:"str"
+M W:"'css:div#science_heroes div.col-md-6'"
+EA U|V|W
+M X:"parent"
+M Y:"NoneType"
+M Z:"None"
+EA X|Y|Z
+P 0:R|S|T|e|785
+M 2:"list"
+M 3:"[<selenium.webdriver.remote.webelement.WebElement (session=\"e97d5ce14f6904206548dca58719e4d5\", element=\"f.0D2F992A19E020F1E20B40CBDBA093AE.d.5075B562F867BD5732A114A6EB1E1C36.e.598\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"e97d5ce14f6904206548dca58719e4d5\", element=\"f.0D2F992A19E020F1E20B40CBDBA093AE.d.5075B562F867BD5732A114A6EB1E1C36.e.604\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"e97d5ce14f6904206548dca58719e4d5\", element=\"f.0D2F992A19E020F1E20B40CBDBA093AE.d.5075B562F867BD5732A114A6EB1E1C36.e.611\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"e97d5ce14f6904206548dca58719e4d5\", element=\"f.0D2F992A19E020F1E20B40CBDBA093AE.d.5075B562F867BD5732A114A6EB1E1C36.e.617\")>]"
+R 0|2|3|6.984
+EE n|u|6.984
+P 4:P|x|y|e|29
+M 5:"article_containers"
+AS 4|5|2|3|6.984
+P 6:P|x|y|e|30
+M 7:"articles"
+M 8:"[]"
+AS 6|7|2|8|6.984
+M aa:"for container in article_containers"
+P 9:aa|x|y|e|32
+M ab:"FOR"
+SE 9|ab|6.984
+M ad:"Step: for container in article_containers"
+P ac:ad|x|y|e|32
+M ae:"FOR_STEP"
+SE ac|ae|6.984
+M af:"container"
+M ag:"WebElement"
+M ah:"<selenium.webdriver.remote.webelement.WebElement (session=\"e97d5ce14f6904206548dca58719e4d5\", element=\"f.0D2F992A19E020F1E20B40CBDBA093AE.d.5075B562F867BD5732A114A6EB1E1C36.e.598\")>"
+EA af|ag|ah
+M aj:"SeleniumLibrary.find_element"
+P ai:aj|S|T|e|754
+SE ai|n|6.984
+M ak:"'css:div.latest-head a'"
+EA U|V|ak
+EA X|ag|ah
+P al:aj|S|T|e|769
+M am:"<selenium.webdriver.remote.webelement.WebElement (session=\"e97d5ce14f6904206548dca58719e4d5\", element=\"f.0D2F992A19E020F1E20B40CBDBA093AE.d.5075B562F867BD5732A114A6EB1E1C36.e.600\")>"
+R al|ag|am|6.994
+EE n|u|6.994
+P an:P|x|y|e|34
+M ao:"title_element"
+AS an|ao|ag|am|6.994
+SE ai|n|6.994
+M ap:"'css:span.story-date'"
+EA U|V|ap
+EA X|ag|ah
+M aq:"<selenium.webdriver.remote.webelement.WebElement (session=\"e97d5ce14f6904206548dca58719e4d5\", element=\"f.0D2F992A19E020F1E20B40CBDBA093AE.d.5075B562F867BD5732A114A6EB1E1C36.e.602\")>"
+R al|ag|aq|7.003
+EE n|u|7.003
+P ar:P|x|y|e|35
+M as:"date_element"
+AS ar|as|ag|aq|7.003
+M au:"WebElement.get_attribute"
+M av:"selenium.webdriver.remote.webelement"
+M aw:"C:\\ProgramData\\sema4ai\\ht\\a81d537_c5e81ff_691db988\\Lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py"
+P at:au|av|aw|e|150
+SE at|n|7.003
+M ax:"name"
+M ay:"'href'"
+EA ax|V|ay
+P az:au|av|aw|e|180
+M aA:"'https://www.sciencedaily.com/releases/2025/02/250225121530.htm'"
+R az|V|aA|7.091
+EE n|u|7.091
+M aC:"extract_article_text"
+P aB:aC|x|y|e|71
+SE aB|n|7.091
+M aD:"url"
+EA aD|V|aA
+SE G|n|7.091
+M aE:"(<RPA.Browser.Selenium.Selenium object at 0x00000190E23619D0>, 'https://www.sciencedaily.com/releases/2025/02/250225121530.htm')"
+EA o|p|aE
+EA r|s|t
+M aF:"2"
+R L|M|aF|10.214
+EE n|u|10.214
+M aH:"WaitingKeywords.wait_until_element_is_visible"
+M aI:"SeleniumLibrary.keywords.waiting"
+M aJ:"C:\\ProgramData\\sema4ai\\ht\\a81d537_c5e81ff_691db988\\Lib\\site-packages\\SeleniumLibrary\\keywords\\waiting.py"
+P aG:aH|aI|aJ|e|299
+SE aG|n|10.214
+M aK:"'css:div#text'"
+EA U|V|aK
+M aL:"timeout"
+M aM:"10"
+EA aL|M|aM
+M aN:"error"
+EA aN|Y|Z
+EE n|u|10.267
+SE Q|n|10.267
+M aO:"'css:div#text p'"
+EA U|V|aO
+EA X|Y|Z
+M aP:"[<selenium.webdriver.remote.webelement.WebElement (session=\"240330bd45c422fe7a4aa143648cd0bc\", element=\"f.7AADEDB16A9A426515307B9549EA6901.d.48B85C14CB1C66AAE23B00E30A85BE68.e.360\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"240330bd45c422fe7a4aa143648cd0bc\", element=\"f.7AADEDB16A9A426515307B9549EA6901.d.48B85C14CB1C66AAE23B00E30A85BE68.e.361\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"240330bd45c422fe7a4aa143648cd0bc\", element=\"f.7AADEDB16A9A426515307B9549EA6901.d.48B85C14CB1C66AAE23B00E30A85BE68.e.362\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"240330bd45c422fe7a4aa143648cd0bc\", element=\"f.7AADEDB16A9A426515307B9549EA6901.d.48B85C14CB1C66AAE23B00E30A85BE68.e.363\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"240330bd45c422fe7a4aa143648cd0bc\", element=\"f.7AADEDB16A9A426515307B9549EA6901.d.48B85C14CB1C66AAE23B00E30A85BE68.e.365\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"240330bd45c422fe7a4aa143648cd0bc\", element=\"f.7AADEDB16A9A426515307B9549EA6901.d.48B85C14CB1C66AAE23B00E30A85BE68.e.366\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"240330bd45c422fe7a4aa143648cd0bc\", element=\"f.7AADEDB16A9A426515307B9549EA6901.d.48B85C14CB1C66AAE23B00E30A85BE68.e.368\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"240330bd45c422fe7a4aa143648cd0bc\", element=\"f.7AADEDB16A9A426515307B9549EA6901.d.48B85C14CB1C66AAE23B00E30A85BE68.e.369\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"240330bd45c422fe7a4aa143648cd0bc\", element=\"f.7AADEDB16A9A426515307B9549EA6901.d.48B85C14CB1C66AAE23B00E30A85BE68.e.370\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"240330bd45c422fe7a4aa143648cd0bc\", element=\"f.7AADEDB16A9A426515307B9549EA6901.d.48B85C14CB1C66AAE23B00E30A85BE68.e.371\")>]"
+R 0|2|aP|10.288
+EE n|u|10.288
+P aQ:aC|x|y|e|77
+M aR:"paragraphs"
+AS aQ|aR|2|aP|10.288
+M aT:"WebElement.text"
+P aS:aT|av|aw|e|87
+SE aS|n|10.288
+P aU:aT|av|aw|e|89
+M aV:"'This new \"molecularly functionalized biomass hydrogels\" system can convert a wide range of natural products into sorbents, materials that absorb liquids. By combining these sorbents with mild heat, the researchers can harvest gallons of drinkable water out of the atmosphere, even in dry conditions.'"
+R aU|V|aV|10.327
+EE n|u|10.327
+SE aS|n|10.327
+M aW:"'\"With this breakthrough, we\\'ve created a universal molecular engineering strategy that allows diverse natural materials to be transformed into high-efficiency sorbents,\" said Guihua Yu, a professor of materials science and mechanical engineering and Texas Materials Institute at UT Austin. \"This opens up an entirely new way to think about sustainable water collection, marking a big step towards practical water harvesting systems for households and small community scale.\"'"
+R aU|V|aW|10.36
+EE n|u|10.36
+SE aS|n|10.36
+M aX:"'In field tests, the researchers generated 14.19 liters (3.75 gallons) of clean water per kilogram of sorbent daily. Most sorbents can generate between 1 and 5 liters per kilogram per day.'"
+R aU|V|aX|10.369
+EE n|u|10.369
+SE aS|n|10.369
+M aY:"'The new research was published in Advanced Materials.'"
+R aU|V|aY|10.375
+EE n|u|10.375
+SE aS|n|10.375
+M aZ:"'This system represents a new way of designing sorbents, the researchers say. Instead of the traditional \"select-and-combine\" approach, which requires picking specific materials for specific functions, this general molecular strategy makes it possible to turn almost any biomass into an efficient water harvester.'"
+R aU|V|aZ|10.381
+EE n|u|10.381
+SE aS|n|10.381
+M a0:"\"Unlike existing synthetic sorbents, which use petrochemicals and generally require high energy inputs, the UT Austin team's biomass-based hydrogel is biodegradable, scalable, and requires minimal energy to release water. The secret lies in a two-step molecular engineering process that imparts hygroscopic properties and thermoresponsive behavior to any biomass-based polysaccharide, such as cellulose, starch, or chitosan.\""
+R aU|V|a0|10.388
+EE n|u|10.388
+SE aS|n|10.388
+M a1:"'\"At the end of the day, clean water access should be simple, sustainable, and scalable,\" said Weixin Guan, a senior doctoral student and the study\\'s lead researcher. \"This material gives us a way to tap into nature\\'s most abundant resources and make water from air -- anytime, anywhere.\"'"
+R aU|V|a1|10.394
+EE n|u|10.394
+SE aS|n|10.394
+M a2:"\"The latest innovation is part of Yu's years-long quest to develop solutions for people lacking access to clean drinking water. He's developed water-generating hydrogels throughout his career, adapting them for the driest conditions. He recently created an injectable water filtration system, and he has applied his hydrogel technology to farming.\""
+R aU|V|a2|10.399
+EE n|u|10.399
+SE aS|n|10.399
+M a3:"'The research team is now working on scaling production and designing real-world device systems for commercialization, including portable water harvesters, self-sustaining irrigation systems, and emergency drinking water devices. Since the beginning, the researchers have focused on scalability and the ability to translate this research into solutions that can help people around the world.'"
+R aU|V|a3|10.407
+EE n|u|10.407
+SE aS|n|10.407
+M a4:"'\"The biggest challenge in sustainable water harvesting is developing a solution that scales up efficiently and remains practical outside the lab,\" said Yaxuan Zhao, a graduate researcher in Yu\\'s lab. \"Since this hydrogel can be fabricated from widely available biomass and operates with minimal energy input, it has strong potential for large-scale production and deployment in off-grid communities, emergency relief efforts, and decentralized water systems.\"'"
+R aU|V|a4|10.413
+EE n|u|10.413
+P a5:aC|x|y|e|79
+M a6:"article_text"
+M a7:"'This new \"molecularly functionalized biomass hydrogels\" system can convert a wide range of natural products into sorbents, materials that absorb liquids. By combining these sorbents with mild heat, the researchers can harvest gallons of drinkable water out of the atmosphere, even in dry conditions.\\n\\n\"With this breakthrough, we\\'ve created a universal molecular engineering strategy that allows diverse natural materials to be transformed into high-efficiency sorbents,\" said Guihua Yu, a professor of materials science and mechanical engineering and Texas Materials Institute at UT Austin. \"This opens up an entirely new way to think about sustainable water collection, marking a big step towards practical water harvesting systems for households and small community scale.\"\\n\\nIn field tests, the researchers generated 14.19 liters (3.75 gallons) of clean water per kilogram of sorbent daily. Most sorbents can generate between 1 and 5 liters per kilogram per day.\\n\\nThe new research was published in Advanced Materials.\\n\\nThis system represents a new way of designing sorbents, the researchers say. Instead of the traditional \"select-and-combine\" approach, which requires picking specific materials for specific functions, this general molecular strategy makes it possible to turn almost any biomass into an efficient water harvester.\\n\\nUnlike existing synthetic sorbents, which use petrochemicals and generally require high energy inputs, the UT Austin team\\'s biomass-based hydrogel is biodegradable, scalable, and requires minimal energy to release water. The secret lies in a two-step molecular engineering process that imparts hygroscopic properties and thermoresponsive behavior to any biomass-based polysaccharide, such as cellulose, starch, or chitosan.\\n\\n\"At the end of the day, clean water access should be simple, sustainable, and scalable,\" said Weixin Guan, a senior doctoral student and the study\\'s lead researcher. \"This material gives us a way to tap into nature\\'s most abundant resources and make water from air -- anytime, anywhere.\"\\n\\nThe latest innovation is part of Yu\\'s years-long quest to develop solutions for people lacking access to clean drinking water. He\\'s developed water-generating hydrogels throughout his career, adapting them for the driest conditions. He recently created an injectable water filtration system, and he has applied his hydrogel technology to farming.\\n\\nThe research team is now working on scaling production and designing real-world device systems for commercialization, including portable water harvesters, self-sustaining irrigation systems, and emergency drinking water devices. Since the beginning, the researchers have focused on scalability and the ability to translate this research into solutions that can help people around the world.\\n\\n\"The biggest challenge in sustainable water harvesting is developing a solution that scales up efficiently and remains practical outside the lab,\" said Yaxuan Zhao, a graduate researcher in Yu\\'s lab. \"Since this hydrogel can be fabricated from widely available biomass and operates with minimal energy input, it has strong potential for large-scale production and deployment in off-grid communities, emergency relief efforts, and decentralized water systems.\"'"
+AS a5|a6|V|a7|10.413
+P a8:aC|x|y|e|81
+R a8|V|a7|10.413
+M ba:"BrowserManagementKeywords.close_browser"
+M bb:"SeleniumLibrary.keywords.browsermanagement"
+M bc:"C:\\ProgramData\\sema4ai\\ht\\a81d537_c5e81ff_691db988\\Lib\\site-packages\\SeleniumLibrary\\keywords\\browsermanagement.py"
+P a9:ba|bb|bc|e|53
+SE a9|n|10.413
+EE n|u|12.754
+EE n|u|12.754
+P bd:P|x|y|e|36
+AS bd|a6|V|a7|12.754
+M bf:"if article_text"
+P be:bf|x|y|e|38
+M bg:"IF_SCOPE"
+SE be|bg|12.754
+EA a6|V|a7
+M bi:"review_scientific_article"
+P bh:bi|x|y|e|94
+SE bh|n|12.754
+M bj:"text"
+EA bj|V|a7
+M bl:"OpenAI.__init__"
+M bm:"openai._client"
+M bn:"C:\\ProgramData\\sema4ai\\ht\\a81d537_c5e81ff_691db988\\Lib\\site-packages\\openai\\_client.py"
+P bk:bl|bm|bn|e|74
+SE bk|n|12.754
+EE n|u|13.499
+P bo:bi|x|y|e|96
+M bp:"client"
+M bq:"OpenAI"
+M br:"<openai.OpenAI object at 0x00000190E2738440>"
+AS bo|bp|bq|br|13.499
+M bt:"openai._utils._utils"
+M bu:"C:\\ProgramData\\sema4ai\\ht\\a81d537_c5e81ff_691db988\\Lib\\site-packages\\openai\\_utils\\_utils.py"
+P bs:H|bt|bu|e|246
+SE bs|n|13.499
+M bv:"(<openai.resources.chat.completions.completions.Completions object at 0x00000190E5C01C40>,)"
+EA o|p|bv
+M bw:"{'model': 'gpt-4o', 'messages': [{'role': 'developer', 'content': 'You are a scientific article reviewer. Read and make a short(max 80 words) truthful pitch.'}, {'role': 'user', 'content': 'This new \"molecularly functionalized biomass hydrogels\" system can convert a wide range of natural products into sorbents, materials that absorb liquids. By combining these sorbents with mild heat, the researchers can harvest gallons of drinkable water out of the atmosphere, even in dry conditions.\\n\\n\"With this breakthrough, we\\'ve created a universal molecular engineering strategy that allows diverse natural materials to be transformed into high-efficiency sorbents,\" said Guihua Yu, a professor of materials science and mechanical engineering and Texas Materials Institute at UT Austin. \"This opens up an entirely new way to think about sustainable water collection, marking a big step towards practical water harvesting systems for households and small community scale.\"\\n\\nIn field tests, the researchers generated 14.19 liters (3.75 gallons) of clean water per kilogram of sorbent daily. Most sorbents can generate between 1 and 5 liters per kilogram per day.\\n\\nThe new research was published in Advanced Materials.\\n\\nThis system represents a new way of designing sorbents, the researchers say. Instead of the traditional \"select-and-combine\" approach, which requires picking specific materials for specific functions, this general molecular strategy makes it possible to turn almost any biomass into an efficient water harvester.\\n\\nUnlike existing synthetic sorbents, which use petrochemicals and generally require high energy inputs, the UT Austin team\\'s biomass-based hydrogel is biodegradable, scalable, and requires minimal energy to release water. The secret lies in a two-step molecular engineering process that imparts hygroscopic properties and thermoresponsive behavior to any biomass-based polysaccharide, such as cellulose, starch, or chitosan.\\n\\n\"At the end of the day, clean water access should be simple, sustainable, and scalable,\" said Weixin Guan, a senior doctoral student and the study\\'s lead researcher. \"This material gives us a way to tap into nature\\'s most abundant resources and make water from air -- anytime, anywhere.\"\\n\\nThe latest innovation is part of Yu\\'s years-long quest to develop solutions for people lacking access to clean drinking water. He\\'s developed water-generating hydrogels throughout his career, adapting them for the driest conditions. He recently created an injectable water filtration system, and he has applied his hydrogel technology to farming.\\n\\nThe research team is now working on scaling production and designing real-world device systems for commercialization, including portable water harvesters, self-sustaining irrigation systems, and emergency drinking water devices. Since the beginning, the researchers have focused on scalability and the ability to translate this research into solutions that can help people around the world.\\n\\n\"The biggest challenge in sustainable water harvesting is developing a solution that scales up efficiently and remains practical outside the lab,\" said Yaxuan Zhao, a graduate researcher in Yu\\'s lab. \"Since this hydrogel can be fabricated from widely available biomass and operates with minimal energy input, it has strong potential for large-scale production and deployment in off-grid communities, emergency relief efforts, and decentralized water systems.\"'}]}"
+EA r|s|bw
+P bx:H|bt|bu|e|279
+M by:"ChatCompletion"
+M bz:"ChatCompletion(id='chatcmpl-B6zPe1eA9MOEgJusmXSWg75DMgLig', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='Researchers at UT Austin have developed an innovative system using \"molecularly functionalized biomass hydrogels\" to efficiently harvest water from the atmosphere, even in arid conditions. This groundbreaking bio-based technology transforms diverse natural materials into highly efficient and biodegradable sorbents using a new molecular engineering strategy, achieving up to 14.19 liters of water per kilogram daily. The scalable, energy-efficient solution offers promising applications for sustainable household water systems, emergency relief, and off-grid communities, aiming to improve global access to clean water. Published in Advanced Materials.', refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None))], created=1741005738, model='gpt-4o-2024-08-06', object='chat.completion', service_tier='default', system_fingerprint='fp_f9f4fb6dbf', usage=CompletionUsage(completion_tokens=111, prompt_tokens=631, total_tokens=742, completion_tokens_details=CompletionTokensDetails(accepted_prediction_tokens=0, audio_tokens=0, reasoning_tokens=0, rejected_prediction_tokens=0), prompt_tokens_details=PromptTokensDetails(audio_tokens=0, cached_tokens=0)))"
+R bx|by|bz|16.958
+EE n|u|16.958
+P bA:bi|x|y|e|98
+M bB:"completion"
+AS bA|bB|by|bz|16.959
+P bC:bi|x|y|e|106
+M bD:"message"
+M bE:"'Researchers at UT Austin have developed an innovative system using \"molecularly functionalized biomass hydrogels\" to efficiently harvest water from the atmosphere, even in arid conditions. This groundbreaking bio-based technology transforms diverse natural materials into highly efficient and biodegradable sorbents using a new molecular engineering strategy, achieving up to 14.19 liters of water per kilogram daily. The scalable, energy-efficient solution offers promising applications for sustainable household water systems, emergency relief, and off-grid communities, aiming to improve global access to clean water. Published in Advanced Materials.'"
+AS bC|bD|V|bE|16.959
+P bF:bi|x|y|e|107
+R bF|V|bE|16.959
+EE n|u|16.959
+P bG:P|x|y|e|39
+M bH:"review"
+AS bG|bH|V|bE|16.959
+SE aS|n|16.959
+M bI:"'From Scraps to Sips: Everyday Biomass Produces Drinking Water from Thin Air'"
+R aU|V|bI|16.968
+EE n|u|16.968
+SE at|n|16.968
+EA ax|V|ay
+R az|V|aA|16.979
+EE n|u|16.979
+SE aS|n|16.979
+M bJ:"'Feb. 25, 2025 \u2014'"
+R aU|V|bJ|16.981
+EE n|u|16.981
+M bL:"clean_string"
+P bK:bL|x|y|e|65
+SE bK|n|16.981
+EA V|V|bJ
+P bM:bL|x|y|e|68
+R bM|V|bJ|16.981
+EE n|u|16.981
+P bN:P|x|y|e|41
+M bO:"article"
+M bP:"{'title': 'From Scraps to Sips: Everyday Biomass Produces Drinking Water from Thin Air', 'link': 'https://www.sciencedaily.com/releases/2025/02/250225121530.htm', 'date': 'Feb. 25, 2025 \u2014', 'text': 'This new \"molecularly functionalized biomass hydrogels\" system can convert a wide range of natural products into sorbents, materials that absorb liquids. By combining these sorbents with mild heat, the researchers can harvest gallons of drinkable water out of the atmosphere, even in dry conditions.\\n\\n\"With this breakthrough, we\\'ve created a universal molecular engineering strategy that allows diverse natural materials to be transformed into high-efficiency sorbents,\" said Guihua Yu, a professor of materials science and mechanical engineering and Texas Materials Institute at UT Austin. \"This opens up an entirely new way to think about sustainable water collection, marking a big step towards practical water harvesting systems for households and small community scale.\"\\n\\nIn field tests, the researchers generated 14.19 liters (3.75 gallons) of clean water per kilogram of sorbent daily. Most sorbents can generate between 1 and 5 liters per kilogram per day.\\n\\nThe new research was published in Advanced Materials.\\n\\nThis system represents a new way of designing sorbents, the researchers say. Instead of the traditional \"select-and-combine\" approach, which requires picking specific materials for specific functions, this general molecular strategy makes it possible to turn almost any biomass into an efficient water harvester.\\n\\nUnlike existing synthetic sorbents, which use petrochemicals and generally require high energy inputs, the UT Austin team\\'s biomass-based hydrogel is biodegradable, scalable, and requires minimal energy to release water. The secret lies in a two-step molecular engineering process that imparts hygroscopic properties and thermoresponsive behavior to any biomass-based polysaccharide, such as cellulose, starch, or chitosan.\\n\\n\"At the end of the day, clean water access should be simple, sustainable, and scalable,\" said Weixin Guan, a senior doctoral student and the study\\'s lead researcher. \"This material gives us a way to tap into nature\\'s most abundant resources and make water from air -- anytime, anywhere.\"\\n\\nThe latest innovation is part of Yu\\'s years-long quest to develop solutions for people lacking access to clean drinking water. He\\'s developed water-generating hydrogels throughout his career, adapting them for the driest conditions. He recently created an injectable water filtration system, and he has applied his hydrogel technology to farming.\\n\\nThe research team is now working on scaling production and designing real-world device systems for commercialization, including portable water harvesters, self-sustaining irrigation systems, and emergency drinking water devices. Since the beginning, the researchers have focused on scalability and the ability to translate this research into solutions that can help people around the world.\\n\\n\"The biggest challenge in sustainable water harvesting is developing a solution that scales up efficiently and remains practical outside the lab,\" said Yaxuan Zhao, a graduate researcher in Yu\\'s lab. \"Since this hydrogel can be fabricated from widely available biomass and operates with minimal energy input, it has strong potential for large-scale production and deployment in off-grid communities, emergency relief efforts, and decentralized water systems.\"', 'review': 'Researchers at UT Austin have developed an innovative system using \"molecularly functionalized biomass hydrogels\" to efficiently harvest water from the atmosphere, even in arid conditions. This groundbreaking bio-based technology transforms diverse natural materials into highly efficient and biodegradable sorbents using a new molecular engineering strategy, achieving up to 14.19 liters of water per kilogram daily. The scalable, energy-efficient solution offers promising applications for sustainable household water systems, emergency relief, and off-grid communities, aiming to improve global access to clean water. Published in Advanced Materials.'}"
+AS bN|bO|s|bP|16.981
+EE bg|u|16.981
+EE ae|u|16.981
+SE ac|ae|16.981
+M bQ:"<selenium.webdriver.remote.webelement.WebElement (session=\"e97d5ce14f6904206548dca58719e4d5\", element=\"f.0D2F992A19E020F1E20B40CBDBA093AE.d.5075B562F867BD5732A114A6EB1E1C36.e.604\")>"
+EA af|ag|bQ
+SE ai|n|16.981
+EA U|V|ak
+EA X|ag|bQ
+M bR:"<selenium.webdriver.remote.webelement.WebElement (session=\"e97d5ce14f6904206548dca58719e4d5\", element=\"f.0D2F992A19E020F1E20B40CBDBA093AE.d.5075B562F867BD5732A114A6EB1E1C36.e.606\")>"
+R al|ag|bR|16.988
+EE n|u|16.988
+AS an|ao|ag|bR|16.988
+SE ai|n|16.988
+EA U|V|ap
+EA X|ag|bQ
+M bS:"<selenium.webdriver.remote.webelement.WebElement (session=\"e97d5ce14f6904206548dca58719e4d5\", element=\"f.0D2F992A19E020F1E20B40CBDBA093AE.d.5075B562F867BD5732A114A6EB1E1C36.e.608\")>"
+R al|ag|bS|16.998
+EE n|u|16.998
+AS ar|as|ag|bS|16.998
+SE at|n|16.998
+EA ax|V|ay
+M bT:"'https://www.sciencedaily.com/releases/2025/02/250225121528.htm'"
+R az|V|bT|16.998
+EE n|u|16.998
+SE aB|n|16.998
+EA aD|V|bT
+SE G|n|16.998
+M bU:"(<RPA.Browser.Selenium.Selenium object at 0x00000190E23619D0>, 'https://www.sciencedaily.com/releases/2025/02/250225121528.htm')"
+EA o|p|bU
+EA r|s|t
+M bV:"3"
+R L|M|bV|19.931
+EE n|u|19.931
+SE aG|n|19.932
+EA U|V|aK
+EA aL|M|aM
+EA aN|Y|Z
+EE n|u|19.954
+SE Q|n|19.954
+EA U|V|aO
+EA X|Y|Z
+M bW:"[<selenium.webdriver.remote.webelement.WebElement (session=\"2de365e4d6ee4cada77990bf121ead5a\", element=\"f.D2C5FB0BA5332B27A5150E35A85FDE62.d.91A5A3FC522EA96FCDF779AA382F291F.e.399\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"2de365e4d6ee4cada77990bf121ead5a\", element=\"f.D2C5FB0BA5332B27A5150E35A85FDE62.d.91A5A3FC522EA96FCDF779AA382F291F.e.400\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"2de365e4d6ee4cada77990bf121ead5a\", element=\"f.D2C5FB0BA5332B27A5150E35A85FDE62.d.91A5A3FC522EA96FCDF779AA382F291F.e.401\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"2de365e4d6ee4cada77990bf121ead5a\", element=\"f.D2C5FB0BA5332B27A5150E35A85FDE62.d.91A5A3FC522EA96FCDF779AA382F291F.e.402\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"2de365e4d6ee4cada77990bf121ead5a\", element=\"f.D2C5FB0BA5332B27A5150E35A85FDE62.d.91A5A3FC522EA96FCDF779AA382F291F.e.403\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"2de365e4d6ee4cada77990bf121ead5a\", element=\"f.D2C5FB0BA5332B27A5150E35A85FDE62.d.91A5A3FC522EA96FCDF779AA382F291F.e.404\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"2de365e4d6ee4cada77990bf121ead5a\", element=\"f.D2C5FB0BA5332B27A5150E35A85FDE62.d.91A5A3FC522EA96FCDF779AA382F291F.e.406\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"2de365e4d6ee4cada77990bf121ead5a\", element=\"f.D2C5FB0BA5332B27A5150E35A85FDE62.d.91A5A3FC522EA96FCDF779AA382F291F.e.408\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"2de365e4d6ee4cada77990bf121ead5a\", element=\"f.D2C5FB0BA5332B27A5150E35A85FDE62.d.91A5A3FC522EA96FCDF779AA382F291F.e.409\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"2de365e4d6ee4cada77990bf121ead5a\", element=\"f.D2C5FB0BA5332B27A5150E35A85FDE62.d.91A5A3FC522EA96FCDF779AA382F291F.e.410\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"2de365e4d6ee4cada77990bf121ead5a\", element=\"f.D2C5FB0BA5332B27A5150E35A85FDE62.d.91A5A3FC522EA96FCDF779AA382F291F.e.411\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"2de365e4d6ee4cada77990bf121ead5a\", element=\"f.D2C5FB0BA5332B27A5150E35A85FDE62.d.91A5A3FC522EA96FCDF779AA382F291F.e.412\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"2de365e4d6ee4cada77990bf121ead5a\", element=\"f.D2C5FB0BA5332B27A5150E35A85FDE62.d.91A5A3FC522EA96FCDF779AA382F291F.e.413\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"2de365e4d6ee4cada77990bf121ead5a\", element=\"f.D2C5FB0BA5332B27A5150E35A85FDE62.d.91A5A3FC522EA96FCDF779AA382F291F.e.414\")>]"
+R 0|2|bW|19.978
+EE n|u|19.978
+AS aQ|aR|2|bW|19.978
+SE aS|n|19.978
+M bX:"'Nuclear power plants, which generate about 20% of all electricity produced in the United States, produce almost no greenhouse gas emissions. However, these systems do create radioactive waste, which can be dangerous to human health and the environment. Safely disposing of this waste can be challenging.'"
+R aU|V|bX|20.032
+EE n|u|20.032
+SE aS|n|20.032
+M bY:"'Using a combination of scintillator crystals, high-density materials that emit light when they absorb radiation, and solar cells, the team, led by researchers from The Ohio State University, demonstrated that ambient gamma radiation could be harvested to produce a strong enough electric output to power microelectronics, like microchips.'"
+R aU|V|bY|20.059
+EE n|u|20.059
+SE aS|n|20.059
+M bZ:"\"To test this battery, which is a prototype about 4 cubic centimeters small, researchers used two different radioactive sources, cesium-137, and cobalt-60, some of the most significant fission products that come from spent nuclear fuel. The battery was tested at Ohio State's Nuclear Reactor Laboratory. The NRL supports student and faculty research, student education, and service to industry -- it does not produce electrical power.\""
+R aU|V|bZ|20.067
+EE n|u|20.067
+SE aS|n|20.067
+M b0:"'Their results showed that when cesium-137 was used, the battery generated 288 nanowatts. Yet with the much stronger isotope cobalt-60, the battery produced 1.5 microwatts of power, about enough to switch on a tiny sensor.'"
+R aU|V|b0|20.074
+EE n|u|20.074
+SE aS|n|20.074
+M b1:"'Although most power outputs for homes and electronics are measured in kilowatts, this suggests that with the right power source, such devices could be scaled up to target applications at or beyond the watts level, said Raymond Cao, lead author of the study and a professor in mechanical and aerospace engineering at Ohio State.'"
+R aU|V|b1|20.149
+EE n|u|20.149
+SE aS|n|20.149
+M b2:"'The study was recently published in the journal Optical Materials: X.'"
+R aU|V|b2|20.164
+EE n|u|20.164
+SE aS|n|20.164
+M b3:"\"The researchers said these batteries would be used near where the nuclear waste is produced, such as in nuclear waste storage pools or nuclear systems for space and deep sea exploration -- they aren't designed for public use. Fortunately, although the gamma radiation utilized in this work is about a hundred times more penetrating than a normal X-ray or CT scan, the battery itself does not incorporate radioactive materials, meaning it is still safe to touch.\""
+R aU|V|b3|20.169
+EE n|u|20.17
+SE aS|n|20.17
+M b4:"'\"We\\'re harvesting something considered as waste and by nature, trying to turn it into treasure,\" said Cao, who also serves as the director of Ohio State\\'s Nuclear Reactor Lab.'"
+R aU|V|b4|20.171
+EE n|u|20.171
+SE aS|n|20.171
+M b5:"\"According to the study, the team's battery may also have experienced an increase in power due to the makeup of the prototype scintillator crystal the team opted to use. They found that even the shape and size of the crystals can impact the final electrical output, as a larger volume allows it to absorb more radiation and convert that extra energy into more light. A larger surface area also helps the solar cell generate power.\""
+R aU|V|b5|20.179
+EE n|u|20.179
+SE aS|n|20.179
+M b6:"'\"These are breakthrough results in terms of power output,\" said Ibrahim Oksuz, co-author of the study and a research associate in mechanical and aerospace engineering at Ohio State. \"This two-step process is still in its preliminary stages, but the next step involves generating greater watts with scale-up constructs.\"'"
+R aU|V|b6|20.184
+EE n|u|20.184
+SE aS|n|20.184
+M b7:"\"Since batteries of this type would most likely end up in environments where high levels of radiation already exist and aren't easily accessible to the public, these long-lasting devices wouldn't pollute their surroundings. Even more significantly, they could also operate without the need for routine maintenance.\""
+R aU|V|b7|20.189
+EE n|u|20.189
+SE aS|n|20.189
+M b8:"\"Scaling this technology up would be costly unless these batteries could be reliably manufactured, said Cao. Further research is needed to assess the batteries' usefulness and limitations, including how long they might last once safely implemented, said Oksuz.\""
+R aU|V|b8|20.199
+EE n|u|20.199
+SE aS|n|20.199
+M b9:"'\"The nuclear battery concept is very promising,\" he said. \"There\\'s still lots of room for improvement, but I believe in the future, this approach will carve an important space for itself in both the energy production and sensors industry.\"'"
+R aU|V|b9|20.199
+EE n|u|20.199
+SE aS|n|20.199
+M ca:"\"This work was supported by the U.S. Department of Energy's National Nuclear Security Administration and the U.S. Department of Energy's Office of Energy Efficiency and Renewable Energy. Other co-authors include Sabin Neupane and Yanfa Yan from The University of Toledo.\""
+R aU|V|ca|20.209
+EE n|u|20.209
+M cb:"'Nuclear power plants, which generate about 20% of all electricity produced in the United States, produce almost no greenhouse gas emissions. However, these systems do create radioactive waste, which can be dangerous to human health and the environment. Safely disposing of this waste can be challenging.\\n\\nUsing a combination of scintillator crystals, high-density materials that emit light when they absorb radiation, and solar cells, the team, led by researchers from The Ohio State University, demonstrated that ambient gamma radiation could be harvested to produce a strong enough electric output to power microelectronics, like microchips.\\n\\nTo test this battery, which is a prototype about 4 cubic centimeters small, researchers used two different radioactive sources, cesium-137, and cobalt-60, some of the most significant fission products that come from spent nuclear fuel. The battery was tested at Ohio State\\'s Nuclear Reactor Laboratory. The NRL supports student and faculty research, student education, and service to industry -- it does not produce electrical power.\\n\\nTheir results showed that when cesium-137 was used, the battery generated 288 nanowatts. Yet with the much stronger isotope cobalt-60, the battery produced 1.5 microwatts of power, about enough to switch on a tiny sensor.\\n\\nAlthough most power outputs for homes and electronics are measured in kilowatts, this suggests that with the right power source, such devices could be scaled up to target applications at or beyond the watts level, said Raymond Cao, lead author of the study and a professor in mechanical and aerospace engineering at Ohio State.\\n\\nThe study was recently published in the journal Optical Materials: X.\\n\\nThe researchers said these batteries would be used near where the nuclear waste is produced, such as in nuclear waste storage pools or nuclear systems for space and deep sea exploration -- they aren\\'t designed for public use. Fortunately, although the gamma radiation utilized in this work is about a hundred times more penetrating than a normal X-ray or CT scan, the battery itself does not incorporate radioactive materials, meaning it is still safe to touch.\\n\\n\"We\\'re harvesting something considered as waste and by nature, trying to turn it into treasure,\" said Cao, who also serves as the director of Ohio State\\'s Nuclear Reactor Lab.\\n\\nAccording to the study, the team\\'s battery may also have experienced an increase in power due to the makeup of the prototype scintillator crystal the team opted to use. They found that even the shape and size of the crystals can impact the final electrical output, as a larger volume allows it to absorb more radiation and convert that extra energy into more light. A larger surface area also helps the solar cell generate power.\\n\\n\"These are breakthrough results in terms of power output,\" said Ibrahim Oksuz, co-author of the study and a research associate in mechanical and aerospace engineering at Ohio State. \"This two-step process is still in its preliminary stages, but the next step involves generating greater watts with scale-up constructs.\"\\n\\nSince batteries of this type would most likely end up in environments where high levels of radiation already exist and aren\\'t easily accessible to the public, these long-lasting devices wouldn\\'t pollute their surroundings. Even more significantly, they could also operate without the need for routine maintenance.\\n\\nScaling this technology up would be costly unless these batteries could be reliably manufactured, said Cao. Further research is needed to assess the batteries\\' usefulness and limitations, including how long they might last once safely implemented, said Oksuz.\\n\\n\"The nuclear battery concept is very promising,\" he said. \"There\\'s still lots of room for improvement, but I believe in the future, this approach will carve an important space for itself in both the energy production and sensors industry.\"\\n\\nThis work was supported by the U.S. Department of Energy\\'s National Nuclear Security Administration and the U.S. Department of Energy\\'s Office of Energy Efficiency and Renewable Energy. Other co-authors include Sabin Neupane and Yanfa Yan from The University of Toledo.'"
+AS a5|a6|V|cb|20.209
+R a8|V|cb|20.211
+SE a9|n|20.211
+EE n|u|22.31
+EE n|u|22.31
+AS bd|a6|V|cb|22.31
+SE be|bg|22.31
+EA a6|V|cb
+SE bh|n|22.31
+EA bj|V|cb
+SE bk|n|22.31
+EE n|u|22.578
+M cc:"<openai.OpenAI object at 0x00000190E5C03380>"
+AS bo|bp|bq|cc|22.578
+SE bs|n|22.578
+M cd:"(<openai.resources.chat.completions.completions.Completions object at 0x00000190E60BB200>,)"
+EA o|p|cd
+M ce:"{'model': 'gpt-4o', 'messages': [{'role': 'developer', 'content': 'You are a scientific article reviewer. Read and make a short(max 80 words) truthful pitch.'}, {'role': 'user', 'content': 'Nuclear power plants, which generate about 20% of all electricity produced in the United States, produce almost no greenhouse gas emissions. However, these systems do create radioactive waste, which can be dangerous to human health and the environment. Safely disposing of this waste can be challenging.\\n\\nUsing a combination of scintillator crystals, high-density materials that emit light when they absorb radiation, and solar cells, the team, led by researchers from The Ohio State University, demonstrated that ambient gamma radiation could be harvested to produce a strong enough electric output to power microelectronics, like microchips.\\n\\nTo test this battery, which is a prototype about 4 cubic centimeters small, researchers used two different radioactive sources, cesium-137, and cobalt-60, some of the most significant fission products that come from spent nuclear fuel. The battery was tested at Ohio State\\'s Nuclear Reactor Laboratory. The NRL supports student and faculty research, student education, and service to industry -- it does not produce electrical power.\\n\\nTheir results showed that when cesium-137 was used, the battery generated 288 nanowatts. Yet with the much stronger isotope cobalt-60, the battery produced 1.5 microwatts of power, about enough to switch on a tiny sensor.\\n\\nAlthough most power outputs for homes and electronics are measured in kilowatts, this suggests that with the right power source, such devices could be scaled up to target applications at or beyond the watts level, said Raymond Cao, lead author of the study and a professor in mechanical and aerospace engineering at Ohio State.\\n\\nThe study was recently published in the journal Optical Materials: X.\\n\\nThe researchers said these batteries would be used near where the nuclear waste is produced, such as in nuclear waste storage pools or nuclear systems for space and deep sea exploration -- they aren\\'t designed for public use. Fortunately, although the gamma radiation utilized in this work is about a hundred times more penetrating than a normal X-ray or CT scan, the battery itself does not incorporate radioactive materials, meaning it is still safe to touch.\\n\\n\"We\\'re harvesting something considered as waste and by nature, trying to turn it into treasure,\" said Cao, who also serves as the director of Ohio State\\'s Nuclear Reactor Lab.\\n\\nAccording to the study, the team\\'s battery may also have experienced an increase in power due to the makeup of the prototype scintillator crystal the team opted to use. They found that even the shape and size of the crystals can impact the final electrical output, as a larger volume allows it to absorb more radiation and convert that extra energy into more light. A larger surface area also helps the solar cell generate power.\\n\\n\"These are breakthrough results in terms of power output,\" said Ibrahim Oksuz, co-author of the study and a research associate in mechanical and aerospace engineering at Ohio State. \"This two-step process is still in its preliminary stages, but the next step involves generating greater watts with scale-up constructs.\"\\n\\nSince batteries of this type would most likely end up in environments where high levels of radiation already exist and aren\\'t easily accessible to the public, these long-lasting devices wouldn\\'t pollute their surroundings. Even more significantly, they could also operate without the need for routine maintenance.\\n\\nScaling this technology up would be costly unless these batteries could be reliably manufactured, said Cao. Further research is needed to assess the batteries\\' usefulness and limitations, including how long they might last once safely implemented, said Oksuz.\\n\\n\"The nuclear battery concept is very promising,\" he said. \"There\\'s still lots of room for improvement, but I believe in the future, this approach will carve an important space for itself in both the energy production and sensors industry.\"\\n\\nThis work was supported by the U.S. Department of Energy\\'s National Nuclear Security Administration and the U.S. Department of Energy\\'s Office of Energy Efficiency and Renewable Energy. Other co-authors include Sabin Neupane and Yanfa Yan from The University of Toledo.'}]}"
+EA r|s|ce
+M cf:"ChatCompletion(id='chatcmpl-B6zPmKtAJ3vYwmU7B0r8FCTBeRSQ0', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content=\"This study explores an innovative approach to harnessing gamma radiation from nuclear waste, transforming it into a functional power source for microelectronics. Researchers at Ohio State University developed a prototype battery using scintillator crystals and solar cells, achieving promising results. While it's currently at the preliminary stage, the technology shows potential for specialized applications such as in radiation-intensive environments, with minimal pollution. This breakthrough, supported by U.S. Department of Energy initiatives, could revolutionize energy solutions for niche markets.\", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None))], created=1741005746, model='gpt-4o-2024-08-06', object='chat.completion', service_tier='default', system_fingerprint='fp_f9f4fb6dbf', usage=CompletionUsage(completion_tokens=96, prompt_tokens=813, total_tokens=909, completion_tokens_details=CompletionTokensDetails(accepted_prediction_tokens=0, audio_tokens=0, reasoning_tokens=0, rejected_prediction_tokens=0), prompt_tokens_details=PromptTokensDetails(audio_tokens=0, cached_tokens=0)))"
+R bx|by|cf|24.88
+EE n|u|24.88
+AS bA|bB|by|cf|24.88
+M cg:"\"This study explores an innovative approach to harnessing gamma radiation from nuclear waste, transforming it into a functional power source for microelectronics. Researchers at Ohio State University developed a prototype battery using scintillator crystals and solar cells, achieving promising results. While it's currently at the preliminary stage, the technology shows potential for specialized applications such as in radiation-intensive environments, with minimal pollution. This breakthrough, supported by U.S. Department of Energy initiatives, could revolutionize energy solutions for niche markets.\""
+AS bC|bD|V|cg|24.88
+R bF|V|cg|24.88
+EE n|u|24.88
+AS bG|bH|V|cg|24.88
+SE aS|n|24.88
+M ch:"'Scientists Design Battery That Runs on Atomic Waste'"
+R aU|V|ch|24.889
+EE n|u|24.889
+SE at|n|24.889
+EA ax|V|ay
+R az|V|bT|24.896
+EE n|u|24.896
+SE aS|n|24.896
+R aU|V|bJ|24.898
+EE n|u|24.898
+SE bK|n|24.898
+EA V|V|bJ
+R bM|V|bJ|24.898
+EE n|u|24.898
+M ci:"{'title': 'Scientists Design Battery That Runs on Atomic Waste', 'link': 'https://www.sciencedaily.com/releases/2025/02/250225121528.htm', 'date': 'Feb. 25, 2025 \u2014', 'text': 'Nuclear power plants, which generate about 20% of all electricity produced in the United States, produce almost no greenhouse gas emissions. However, these systems do create radioactive waste, which can be dangerous to human health and the environment. Safely disposing of this waste can be challenging.\\n\\nUsing a combination of scintillator crystals, high-density materials that emit light when they absorb radiation, and solar cells, the team, led by researchers from The Ohio State University, demonstrated that ambient gamma radiation could be harvested to produce a strong enough electric output to power microelectronics, like microchips.\\n\\nTo test this battery, which is a prototype about 4 cubic centimeters small, researchers used two different radioactive sources, cesium-137, and cobalt-60, some of the most significant fission products that come from spent nuclear fuel. The battery was tested at Ohio State\\'s Nuclear Reactor Laboratory. The NRL supports student and faculty research, student education, and service to industry -- it does not produce electrical power.\\n\\nTheir results showed that when cesium-137 was used, the battery generated 288 nanowatts. Yet with the much stronger isotope cobalt-60, the battery produced 1.5 microwatts of power, about enough to switch on a tiny sensor.\\n\\nAlthough most power outputs for homes and electronics are measured in kilowatts, this suggests that with the right power source, such devices could be scaled up to target applications at or beyond the watts level, said Raymond Cao, lead author of the study and a professor in mechanical and aerospace engineering at Ohio State.\\n\\nThe study was recently published in the journal Optical Materials: X.\\n\\nThe researchers said these batteries would be used near where the nuclear waste is produced, such as in nuclear waste storage pools or nuclear systems for space and deep sea exploration -- they aren\\'t designed for public use. Fortunately, although the gamma radiation utilized in this work is about a hundred times more penetrating than a normal X-ray or CT scan, the battery itself does not incorporate radioactive materials, meaning it is still safe to touch.\\n\\n\"We\\'re harvesting something considered as waste and by nature, trying to turn it into treasure,\" said Cao, who also serves as the director of Ohio State\\'s Nuclear Reactor Lab.\\n\\nAccording to the study, the team\\'s battery may also have experienced an increase in power due to the makeup of the prototype scintillator crystal the team opted to use. They found that even the shape and size of the crystals can impact the final electrical output, as a larger volume allows it to absorb more radiation and convert that extra energy into more light. A larger surface area also helps the solar cell generate power.\\n\\n\"These are breakthrough results in terms of power output,\" said Ibrahim Oksuz, co-author of the study and a research associate in mechanical and aerospace engineering at Ohio State. \"This two-step process is still in its preliminary stages, but the next step involves generating greater watts with scale-up constructs.\"\\n\\nSince batteries of this type would most likely end up in environments where high levels of radiation already exist and aren\\'t easily accessible to the public, these long-lasting devices wouldn\\'t pollute their surroundings. Even more significantly, they could also operate without the need for routine maintenance.\\n\\nScaling this technology up would be costly unless these batteries could be reliably manufactured, said Cao. Further research is needed to assess the batteries\\' usefulness and limitations, including how long they might last once safely implemented, said Oksuz.\\n\\n\"The nuclear battery concept is very promising,\" he said. \"There\\'s still lots of room for improvement, but I believe in the future, this approach will carve an important space for itself in both the energy production and sensors industry.\"\\n\\nThis work was supported by the U.S. Department of Energy\\'s National Nuclear Security Administration and the U.S. Department of Energy\\'s Office of Energy Efficiency and Renewable Energy. Other co-authors include Sabin Neupane and Yanfa Yan from The University of Toledo.', 'review': \"This study explores an innovative approach to harnessing gamma radiation from nuclear waste, transforming it into a functional power source for microelectronics. Researchers at Ohio State University developed a prototype battery using scintillator crystals and solar cells, achieving promising results. While it's currently at the preliminary stage, the technology shows potential for specialized applications such as in radiation-intensive environments, with minimal pollution. This breakthrough, supported by U.S. Department of Energy initiatives, could revolutionize energy solutions for niche markets.\"}"
+AS bN|bO|s|ci|24.898
+EE bg|u|24.898
+EE ae|u|24.898
+SE ac|ae|24.903
+M cj:"<selenium.webdriver.remote.webelement.WebElement (session=\"e97d5ce14f6904206548dca58719e4d5\", element=\"f.0D2F992A19E020F1E20B40CBDBA093AE.d.5075B562F867BD5732A114A6EB1E1C36.e.611\")>"
+EA af|ag|cj
+SE ai|n|24.903
+EA U|V|ak
+EA X|ag|cj
+M ck:"<selenium.webdriver.remote.webelement.WebElement (session=\"e97d5ce14f6904206548dca58719e4d5\", element=\"f.0D2F992A19E020F1E20B40CBDBA093AE.d.5075B562F867BD5732A114A6EB1E1C36.e.613\")>"
+R al|ag|ck|24.908
+EE n|u|24.908
+AS an|ao|ag|ck|24.908
+SE ai|n|24.908
+EA U|V|ap
+EA X|ag|cj
+M cl:"<selenium.webdriver.remote.webelement.WebElement (session=\"e97d5ce14f6904206548dca58719e4d5\", element=\"f.0D2F992A19E020F1E20B40CBDBA093AE.d.5075B562F867BD5732A114A6EB1E1C36.e.615\")>"
+R al|ag|cl|24.929
+EE n|u|24.929
+AS ar|as|ag|cl|24.929
+SE at|n|24.929
+EA ax|V|ay
+M cm:"'https://www.sciencedaily.com/releases/2025/02/250225121643.htm'"
+R az|V|cm|24.933
+EE n|u|24.933
+SE aB|n|24.933
+EA aD|V|cm
+SE G|n|24.933
+M cn:"(<RPA.Browser.Selenium.Selenium object at 0x00000190E23619D0>, 'https://www.sciencedaily.com/releases/2025/02/250225121643.htm')"
+EA o|p|cn
+EA r|s|t
+M co:"4"
+R L|M|co|27.981
+EE n|u|27.981
+SE aG|n|27.981
+EA U|V|aK
+EA aL|M|aM
+EA aN|Y|Z
+EE n|u|28.042
+SE Q|n|28.042
+EA U|V|aO
+EA X|Y|Z
+M cp:"[<selenium.webdriver.remote.webelement.WebElement (session=\"567f79e6d248f43be76bcd4e8ed9f11c\", element=\"f.116E8678CB533FAA9421B85E0936FBC8.d.077E5EEEC8711311BCA2F740B8347461.e.26\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"567f79e6d248f43be76bcd4e8ed9f11c\", element=\"f.116E8678CB533FAA9421B85E0936FBC8.d.077E5EEEC8711311BCA2F740B8347461.e.27\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"567f79e6d248f43be76bcd4e8ed9f11c\", element=\"f.116E8678CB533FAA9421B85E0936FBC8.d.077E5EEEC8711311BCA2F740B8347461.e.28\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"567f79e6d248f43be76bcd4e8ed9f11c\", element=\"f.116E8678CB533FAA9421B85E0936FBC8.d.077E5EEEC8711311BCA2F740B8347461.e.29\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"567f79e6d248f43be76bcd4e8ed9f11c\", element=\"f.116E8678CB533FAA9421B85E0936FBC8.d.077E5EEEC8711311BCA2F740B8347461.e.30\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"567f79e6d248f43be76bcd4e8ed9f11c\", element=\"f.116E8678CB533FAA9421B85E0936FBC8.d.077E5EEEC8711311BCA2F740B8347461.e.31\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"567f79e6d248f43be76bcd4e8ed9f11c\", element=\"f.116E8678CB533FAA9421B85E0936FBC8.d.077E5EEEC8711311BCA2F740B8347461.e.32\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"567f79e6d248f43be76bcd4e8ed9f11c\", element=\"f.116E8678CB533FAA9421B85E0936FBC8.d.077E5EEEC8711311BCA2F740B8347461.e.33\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"567f79e6d248f43be76bcd4e8ed9f11c\", element=\"f.116E8678CB533FAA9421B85E0936FBC8.d.077E5EEEC8711311BCA2F740B8347461.e.34\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"567f79e6d248f43be76bcd4e8ed9f11c\", element=\"f.116E8678CB533FAA9421B85E0936FBC8.d.077E5EEEC8711311BCA2F740B8347461.e.35\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"567f79e6d248f43be76bcd4e8ed9f11c\", element=\"f.116E8678CB533FAA9421B85E0936FBC8.d.077E5EEEC8711311BCA2F740B8347461.e.36\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"567f79e6d248f43be76bcd4e8ed9f11c\", element=\"f.116E8678CB533FAA9421B85E0936FBC8.d.077E5EEEC8711311BCA2F740B8347461.e.37\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"567f79e6d248f43be76bcd4e8ed9f11c\", element=\"f.116E8678CB533FAA9421B85E0936FBC8.d.077E5EEEC8711311BCA2F740B8347461.e.38\")>]"
+R 0|2|cp|28.052
+EE n|u|28.052
+AS aQ|aR|2|cp|28.052
+SE aS|n|28.052
+M cq:"'\"Our hope for quantum computation is that it will aid chemists, materials scientists and engineers working on the design and manufacturing of new materials that are so important to our daily lives,\" said Michael Manfra, scientific director of Microsoft Quantum Lab West Lafayette and the Bill and Dee O\\'Brien Distinguished Professor of Physics and Astronomy, professor of materials engineering, and professor of electrical and computer engineering at Purdue. \"The promise of quantum computation is in accelerating scientific discovery and its translation into useful technology. For example, if quantum computers reduce the time and cost to produce new lifesaving therapeutic drugs, that is real societal impact.\"'"
+R aU|V|cq|28.107
+EE n|u|28.107
+SE aS|n|28.107
+M cr:"''"
+R aU|V|cr|28.136
+EE n|u|28.136
+SE aS|n|28.136
+R aU|V|cr|28.143
+EE n|u|28.143
+SE aS|n|28.143
+R aU|V|cr|28.169
+EE n|u|28.169
+SE aS|n|28.169
+M cs:"'Quantum science and engineering at Purdue is a pillar of the Purdue Computes initiative, which is focused on advancing research in computing, physical AI, semiconductors and quantum technologies.'"
+R aU|V|cs|28.19
+EE n|u|28.194
+SE aS|n|28.194
+M ct:"'\"This research breakthrough in the measurement of the state of quasi particles is a milestone in the development of topological quantum computing, and creates a watershed moment in the semiconductor-superconductor hybrid structure,\" Purdue President Mung Chiang said. \"Marking also the latest success in the strategic initiative of Purdue Computes, the deep collaboration that Professor Manfra and his team have created with the Microsoft Quantum Lab West Lafayette on the Purdue campus exemplifies the most impactful industry research partnership at any American university today.\"'"
+R aU|V|ct|28.202
+EE n|u|28.202
+SE aS|n|28.202
+M cu:"'Most approaches to quantum computers rely on local degrees of freedom to encode information. The spin of an electron is a classic example of a qubit. But an individual spin is prone to disturbance -- by relatively common things like heat, vibrations or interactions with other quantum particles -- which can corrupt quantum information stored in the qubit, necessitating a great deal of effort in detecting and correcting errors. Instead of spin, topological quantum computers store information in a more distributed manner; the qubit state is encoded in the state of many particles acting in concert. Consequently, it is harder to scramble the information as the state of all the particles must be changed to alter the qubit state.'"
+R aU|V|cu|28.209
+EE n|u|28.209
+SE aS|n|28.209
+M cv:"'In the Nature paper, the Microsoft team was able to accurately and quickly measure the state of quasi particles that form the basis of the qubit.'"
+R aU|V|cv|28.217
+EE n|u|28.217
+SE aS|n|28.217
+M cw:"'\"The device is used to measure a basic property of a topological qubit quickly,\" Manfra said. \"The team is excited to build on these positive results.\"'"
+R aU|V|cw|28.221
+EE n|u|28.221
+SE aS|n|28.221
+M cx:"'\"The team in West Lafayette pushed existing epitaxial technology to a new state-of-the-art for semiconductor-superconductor hybrid structures to ensure a perfect interface between each of the building blocks of the Microsoft hybrid system,\" said Sergei Gronin, a Microsoft Quantum Lab scientist.'"
+R aU|V|cx|28.23
+EE n|u|28.23
+SE aS|n|28.23
+M cy:"'\"The materials quality that is required for quantum computing chips necessitates constant improvements, so that\\'s one of the biggest challenges,\" Gronin said. \"First, we had to adjust and improve semiconductor technology to meet a new level that nobody was able to achieve before. But equally important was how to create this hybrid system. To do that, we had to merge a semiconducting part and a superconducting part. And that means you need to perfect the semiconductor and the superconductor and perfect the interface between them.\"'"
+R aU|V|cy|28.236
+EE n|u|28.237
+SE aS|n|28.237
+M cz:"\"While work discussed in the Nature article was performed by Microsoft employees, the exposure to industrial-scale research and development is an outstanding opportunity for Purdue students in Manfra's academic group as well. John Watson, Geoffrey Gardner and Saeed Fallahi, who are among the coauthors of the paper, earned their doctoral degrees under Manfra and now work for Microsoft Quantum at locations in Redmond, Washington, and Copenhagen, Denmark. Most of Manfra's former students now work for quantum computing companies, including Microsoft. Tyler Lindemann, who works in the West Lafayette lab and helped to build the hybrid semiconductor-superconductor structures required for the device, is earning a doctoral degree from Purdue under Manfra's supervision.\""
+R aU|V|cz|28.239
+EE n|u|28.239
+SE aS|n|28.239
+M cA:"'\"Working in Professor Manfra\\'s lab in conjunction with my work for Microsoft Quantum has given me a head start in my professional development, and been fruitful for my academic work,\" Lindemann said. \"At the same time, many of the world-class scientists and engineers at Microsoft Quantum have some background in academia, and being able to draw from their knowledge and experience is an indispensable resource in my graduate studies. From both perspectives, it\\'s a great opportunity.\"'"
+R aU|V|cA|28.249
+EE n|u|28.249
+M cB:"'\"Our hope for quantum computation is that it will aid chemists, materials scientists and engineers working on the design and manufacturing of new materials that are so important to our daily lives,\" said Michael Manfra, scientific director of Microsoft Quantum Lab West Lafayette and the Bill and Dee O\\'Brien Distinguished Professor of Physics and Astronomy, professor of materials engineering, and professor of electrical and computer engineering at Purdue. \"The promise of quantum computation is in accelerating scientific discovery and its translation into useful technology. For example, if quantum computers reduce the time and cost to produce new lifesaving therapeutic drugs, that is real societal impact.\"\\n\\n\\n\\n\\n\\n\\n\\nQuantum science and engineering at Purdue is a pillar of the Purdue Computes initiative, which is focused on advancing research in computing, physical AI, semiconductors and quantum technologies.\\n\\n\"This research breakthrough in the measurement of the state of quasi particles is a milestone in the development of topological quantum computing, and creates a watershed moment in the semiconductor-superconductor hybrid structure,\" Purdue President Mung Chiang said. \"Marking also the latest success in the strategic initiative of Purdue Computes, the deep collaboration that Professor Manfra and his team have created with the Microsoft Quantum Lab West Lafayette on the Purdue campus exemplifies the most impactful industry research partnership at any American university today.\"\\n\\nMost approaches to quantum computers rely on local degrees of freedom to encode information. The spin of an electron is a classic example of a qubit. But an individual spin is prone to disturbance -- by relatively common things like heat, vibrations or interactions with other quantum particles -- which can corrupt quantum information stored in the qubit, necessitating a great deal of effort in detecting and correcting errors. Instead of spin, topological quantum computers store information in a more distributed manner; the qubit state is encoded in the state of many particles acting in concert. Consequently, it is harder to scramble the information as the state of all the particles must be changed to alter the qubit state.\\n\\nIn the Nature paper, the Microsoft team was able to accurately and quickly measure the state of quasi particles that form the basis of the qubit.\\n\\n\"The device is used to measure a basic property of a topological qubit quickly,\" Manfra said. \"The team is excited to build on these positive results.\"\\n\\n\"The team in West Lafayette pushed existing epitaxial technology to a new state-of-the-art for semiconductor-superconductor hybrid structures to ensure a perfect interface between each of the building blocks of the Microsoft hybrid system,\" said Sergei Gronin, a Microsoft Quantum Lab scientist.\\n\\n\"The materials quality that is required for quantum computing chips necessitates constant improvements, so that\\'s one of the biggest challenges,\" Gronin said. \"First, we had to adjust and improve semiconductor technology to meet a new level that nobody was able to achieve before. But equally important was how to create this hybrid system. To do that, we had to merge a semiconducting part and a superconducting part. And that means you need to perfect the semiconductor and the superconductor and perfect the interface between them.\"\\n\\nWhile work discussed in the Nature article was performed by Microsoft employees, the exposure to industrial-scale research and development is an outstanding opportunity for Purdue students in Manfra\\'s academic group as well. John Watson, Geoffrey Gardner and Saeed Fallahi, who are among the coauthors of the paper, earned their doctoral degrees under Manfra and now work for Microsoft Quantum at locations in Redmond, Washington, and Copenhagen, Denmark. Most of Manfra\\'s former students now work for quantum computing companies, including Microsoft. Tyler Lindemann, who works in the West Lafayette lab and helped to build the hybrid semiconductor-superconductor structures required for the device, is earning a doctoral degree from Purdue under Manfra\\'s supervision.\\n\\n\"Working in Professor Manfra\\'s lab in conjunction with my work for Microsoft Quantum has given me a head start in my professional development, and been fruitful for my academic work,\" Lindemann said. \"At the same time, many of the world-class scientists and engineers at Microsoft Quantum have some background in academia, and being able to draw from their knowledge and experience is an indispensable resource in my graduate studies. From both perspectives, it\\'s a great opportunity.\"'"
+AS a5|a6|V|cB|28.249
+R a8|V|cB|28.249
+SE a9|n|28.249
+EE n|u|30.337
+EE n|u|30.337
+AS bd|a6|V|cB|30.337
+SE be|bg|30.337
+EA a6|V|cB
+SE bh|n|30.337
+EA bj|V|cB
+SE bk|n|30.337
+EE n|u|30.658
+M cC:"<openai.OpenAI object at 0x00000190E60BBB30>"
+AS bo|bp|bq|cC|30.658
+SE bs|n|30.665
+M cD:"(<openai.resources.chat.completions.completions.Completions object at 0x00000190E6103860>,)"
+EA o|p|cD
+M cE:"{'model': 'gpt-4o', 'messages': [{'role': 'developer', 'content': 'You are a scientific article reviewer. Read and make a short(max 80 words) truthful pitch.'}, {'role': 'user', 'content': '\"Our hope for quantum computation is that it will aid chemists, materials scientists and engineers working on the design and manufacturing of new materials that are so important to our daily lives,\" said Michael Manfra, scientific director of Microsoft Quantum Lab West Lafayette and the Bill and Dee O\\'Brien Distinguished Professor of Physics and Astronomy, professor of materials engineering, and professor of electrical and computer engineering at Purdue. \"The promise of quantum computation is in accelerating scientific discovery and its translation into useful technology. For example, if quantum computers reduce the time and cost to produce new lifesaving therapeutic drugs, that is real societal impact.\"\\n\\n\\n\\n\\n\\n\\n\\nQuantum science and engineering at Purdue is a pillar of the Purdue Computes initiative, which is focused on advancing research in computing, physical AI, semiconductors and quantum technologies.\\n\\n\"This research breakthrough in the measurement of the state of quasi particles is a milestone in the development of topological quantum computing, and creates a watershed moment in the semiconductor-superconductor hybrid structure,\" Purdue President Mung Chiang said. \"Marking also the latest success in the strategic initiative of Purdue Computes, the deep collaboration that Professor Manfra and his team have created with the Microsoft Quantum Lab West Lafayette on the Purdue campus exemplifies the most impactful industry research partnership at any American university today.\"\\n\\nMost approaches to quantum computers rely on local degrees of freedom to encode information. The spin of an electron is a classic example of a qubit. But an individual spin is prone to disturbance -- by relatively common things like heat, vibrations or interactions with other quantum particles -- which can corrupt quantum information stored in the qubit, necessitating a great deal of effort in detecting and correcting errors. Instead of spin, topological quantum computers store information in a more distributed manner; the qubit state is encoded in the state of many particles acting in concert. Consequently, it is harder to scramble the information as the state of all the particles must be changed to alter the qubit state.\\n\\nIn the Nature paper, the Microsoft team was able to accurately and quickly measure the state of quasi particles that form the basis of the qubit.\\n\\n\"The device is used to measure a basic property of a topological qubit quickly,\" Manfra said. \"The team is excited to build on these positive results.\"\\n\\n\"The team in West Lafayette pushed existing epitaxial technology to a new state-of-the-art for semiconductor-superconductor hybrid structures to ensure a perfect interface between each of the building blocks of the Microsoft hybrid system,\" said Sergei Gronin, a Microsoft Quantum Lab scientist.\\n\\n\"The materials quality that is required for quantum computing chips necessitates constant improvements, so that\\'s one of the biggest challenges,\" Gronin said. \"First, we had to adjust and improve semiconductor technology to meet a new level that nobody was able to achieve before. But equally important was how to create this hybrid system. To do that, we had to merge a semiconducting part and a superconducting part. And that means you need to perfect the semiconductor and the superconductor and perfect the interface between them.\"\\n\\nWhile work discussed in the Nature article was performed by Microsoft employees, the exposure to industrial-scale research and development is an outstanding opportunity for Purdue students in Manfra\\'s academic group as well. John Watson, Geoffrey Gardner and Saeed Fallahi, who are among the coauthors of the paper, earned their doctoral degrees under Manfra and now work for Microsoft Quantum at locations in Redmond, Washington, and Copenhagen, Denmark. Most of Manfra\\'s former students now work for quantum computing companies, including Microsoft. Tyler Lindemann, who works in the West Lafayette lab and helped to build the hybrid semiconductor-superconductor structures required for the device, is earning a doctoral degree from Purdue under Manfra\\'s supervision.\\n\\n\"Working in Professor Manfra\\'s lab in conjunction with my work for Microsoft Quantum has given me a head start in my professional development, and been fruitful for my academic work,\" Lindemann said. \"At the same time, many of the world-class scientists and engineers at Microsoft Quantum have some background in academia, and being able to draw from their knowledge and experience is an indispensable resource in my graduate studies. From both perspectives, it\\'s a great opportunity.\"'}]}"
+EA r|s|cE
+M cF:"ChatCompletion(id='chatcmpl-B6zPumIlXJ38pLcOORx9ni8jqGxxy', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content=\"This article highlights a significant breakthrough in quantum computing, achieved through the synergistic collaboration between Purdue University and Microsoft Quantum Lab. The researchers have advanced the measurement of topological qubits, addressing a major hurdle in quantum computation's development. This accomplishment not only promises to accelerate scientific discoveries but also fosters transformative technology applications, such as improved drug design. Additionally, Purdue students benefit immensely from this industrial-scale research exposure, blending academic excellence with cutting-edge industry practices, setting a precedent for impactful academia-industry collaboration.\", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None))], created=1741005754, model='gpt-4o-2024-08-06', object='chat.completion', service_tier='default', system_fingerprint='fp_f9f4fb6dbf', usage=CompletionUsage(completion_tokens=101, prompt_tokens=867, total_tokens=968, completion_tokens_details=CompletionTokensDetails(accepted_prediction_tokens=0, audio_tokens=0, reasoning_tokens=0, rejected_prediction_tokens=0), prompt_tokens_details=PromptTokensDetails(audio_tokens=0, cached_tokens=0)))"
+R bx|by|cF|33.198
+EE n|u|33.198
+AS bA|bB|by|cF|33.198
+M cG:"\"This article highlights a significant breakthrough in quantum computing, achieved through the synergistic collaboration between Purdue University and Microsoft Quantum Lab. The researchers have advanced the measurement of topological qubits, addressing a major hurdle in quantum computation's development. This accomplishment not only promises to accelerate scientific discoveries but also fosters transformative technology applications, such as improved drug design. Additionally, Purdue students benefit immensely from this industrial-scale research exposure, blending academic excellence with cutting-edge industry practices, setting a precedent for impactful academia-industry collaboration.\""
+AS bC|bD|V|cG|33.198
+R bF|V|cG|33.198
+EE n|u|33.198
+AS bG|bH|V|cG|33.198
+SE aS|n|33.198
+M cH:"'Materials Incorporated Into Quantum Qubit Platform'"
+R aU|V|cH|33.204
+EE n|u|33.204
+SE at|n|33.204
+EA ax|V|ay
+R az|V|cm|33.228
+EE n|u|33.228
+SE aS|n|33.228
+R aU|V|bJ|33.233
+EE n|u|33.233
+SE bK|n|33.233
+EA V|V|bJ
+R bM|V|bJ|33.233
+EE n|u|33.233
+M cI:"{'title': 'Materials Incorporated Into Quantum Qubit Platform', 'link': 'https://www.sciencedaily.com/releases/2025/02/250225121643.htm', 'date': 'Feb. 25, 2025 \u2014', 'text': '\"Our hope for quantum computation is that it will aid chemists, materials scientists and engineers working on the design and manufacturing of new materials that are so important to our daily lives,\" said Michael Manfra, scientific director of Microsoft Quantum Lab West Lafayette and the Bill and Dee O\\'Brien Distinguished Professor of Physics and Astronomy, professor of materials engineering, and professor of electrical and computer engineering at Purdue. \"The promise of quantum computation is in accelerating scientific discovery and its translation into useful technology. For example, if quantum computers reduce the time and cost to produce new lifesaving therapeutic drugs, that is real societal impact.\"\\n\\n\\n\\n\\n\\n\\n\\nQuantum science and engineering at Purdue is a pillar of the Purdue Computes initiative, which is focused on advancing research in computing, physical AI, semiconductors and quantum technologies.\\n\\n\"This research breakthrough in the measurement of the state of quasi particles is a milestone in the development of topological quantum computing, and creates a watershed moment in the semiconductor-superconductor hybrid structure,\" Purdue President Mung Chiang said. \"Marking also the latest success in the strategic initiative of Purdue Computes, the deep collaboration that Professor Manfra and his team have created with the Microsoft Quantum Lab West Lafayette on the Purdue campus exemplifies the most impactful industry research partnership at any American university today.\"\\n\\nMost approaches to quantum computers rely on local degrees of freedom to encode information. The spin of an electron is a classic example of a qubit. But an individual spin is prone to disturbance -- by relatively common things like heat, vibrations or interactions with other quantum particles -- which can corrupt quantum information stored in the qubit, necessitating a great deal of effort in detecting and correcting errors. Instead of spin, topological quantum computers store information in a more distributed manner; the qubit state is encoded in the state of many particles acting in concert. Consequently, it is harder to scramble the information as the state of all the particles must be changed to alter the qubit state.\\n\\nIn the Nature paper, the Microsoft team was able to accurately and quickly measure the state of quasi particles that form the basis of the qubit.\\n\\n\"The device is used to measure a basic property of a topological qubit quickly,\" Manfra said. \"The team is excited to build on these positive results.\"\\n\\n\"The team in West Lafayette pushed existing epitaxial technology to a new state-of-the-art for semiconductor-superconductor hybrid structures to ensure a perfect interface between each of the building blocks of the Microsoft hybrid system,\" said Sergei Gronin, a Microsoft Quantum Lab scientist.\\n\\n\"The materials quality that is required for quantum computing chips necessitates constant improvements, so that\\'s one of the biggest challenges,\" Gronin said. \"First, we had to adjust and improve semiconductor technology to meet a new level that nobody was able to achieve before. But equally important was how to create this hybrid system. To do that, we had to merge a semiconducting part and a superconducting part. And that means you need to perfect the semiconductor and the superconductor and perfect the interface between them.\"\\n\\nWhile work discussed in the Nature article was performed by Microsoft employees, the exposure to industrial-scale research and development is an outstanding opportunity for Purdue students in Manfra\\'s academic group as well. John Watson, Geoffrey Gardner and Saeed Fallahi, who are among the coauthors of the paper, earned their doctoral degrees under Manfra and now work for Microsoft Quantum at locations in Redmond, Washington, and Copenhagen, Denmark. Most of Manfra\\'s former students now work for quantum computing companies, including Microsoft. Tyler Lindemann, who works in the West Lafayette lab and helped to build the hybrid semiconductor-superconductor structures required for the device, is earning a doctoral degree from Purdue under Manfra\\'s supervision.\\n\\n\"Working in Professor Manfra\\'s lab in conjunction with my work for Microsoft Quantum has given me a head start in my professional development, and been fruitful for my academic work,\" Lindemann said. \"At the same time, many of the world-class scientists and engineers at Microsoft Quantum have some background in academia, and being able to draw from their knowledge and experience is an indispensable resource in my graduate studies. From both perspectives, it\\'s a great opportunity.\"', 'review': \"This article highlights a significant breakthrough in quantum computing, achieved through the synergistic collaboration between Purdue University and Microsoft Quantum Lab. The researchers have advanced the measurement of topological qubits, addressing a major hurdle in quantum computation's development. This accomplishment not only promises to accelerate scientific discoveries but also fosters transformative technology applications, such as improved drug design. Additionally, Purdue students benefit immensely from this industrial-scale research exposure, blending academic excellence with cutting-edge industry practices, setting a precedent for impactful academia-industry collaboration.\"}"
+AS bN|bO|s|cI|33.233
+EE bg|u|33.233
+EE ae|u|33.233
+SE ac|ae|33.233
+M cJ:"<selenium.webdriver.remote.webelement.WebElement (session=\"e97d5ce14f6904206548dca58719e4d5\", element=\"f.0D2F992A19E020F1E20B40CBDBA093AE.d.5075B562F867BD5732A114A6EB1E1C36.e.617\")>"
+EA af|ag|cJ
+SE ai|n|33.233
+EA U|V|ak
+EA X|ag|cJ
+M cK:"<selenium.webdriver.remote.webelement.WebElement (session=\"e97d5ce14f6904206548dca58719e4d5\", element=\"f.0D2F992A19E020F1E20B40CBDBA093AE.d.5075B562F867BD5732A114A6EB1E1C36.e.619\")>"
+R al|ag|cK|33.239
+EE n|u|33.239
+AS an|ao|ag|cK|33.239
+SE ai|n|33.239
+EA U|V|ap
+EA X|ag|cJ
+M cL:"<selenium.webdriver.remote.webelement.WebElement (session=\"e97d5ce14f6904206548dca58719e4d5\", element=\"f.0D2F992A19E020F1E20B40CBDBA093AE.d.5075B562F867BD5732A114A6EB1E1C36.e.621\")>"
+R al|ag|cL|33.243
+EE n|u|33.243
+AS ar|as|ag|cL|33.243
+SE at|n|33.243
+EA ax|V|ay
+M cM:"'https://www.sciencedaily.com/releases/2025/02/250228113950.htm'"
+R az|V|cM|33.254
+EE n|u|33.254
+SE aB|n|33.254
+EA aD|V|cM
+SE G|n|33.254
+M cN:"(<RPA.Browser.Selenium.Selenium object at 0x00000190E23619D0>, 'https://www.sciencedaily.com/releases/2025/02/250228113950.htm')"
+EA o|p|cN
+EA r|s|t
+M cO:"5"
+R L|M|cO|36.331
+EE n|u|36.331
+SE aG|n|36.331
+EA U|V|aK
+EA aL|M|aM
+EA aN|Y|Z
+EE n|u|36.374
+SE Q|n|36.374
+EA U|V|aO
+EA X|Y|Z
+M cP:"[<selenium.webdriver.remote.webelement.WebElement (session=\"68a42f98553b4d5775cb3763bb8b0563\", element=\"f.A2F79A20F9B05A110DDA3EE27753770C.d.CBFCFD8EFDF64843B7A64E64D5A01AF5.e.372\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"68a42f98553b4d5775cb3763bb8b0563\", element=\"f.A2F79A20F9B05A110DDA3EE27753770C.d.CBFCFD8EFDF64843B7A64E64D5A01AF5.e.373\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"68a42f98553b4d5775cb3763bb8b0563\", element=\"f.A2F79A20F9B05A110DDA3EE27753770C.d.CBFCFD8EFDF64843B7A64E64D5A01AF5.e.374\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"68a42f98553b4d5775cb3763bb8b0563\", element=\"f.A2F79A20F9B05A110DDA3EE27753770C.d.CBFCFD8EFDF64843B7A64E64D5A01AF5.e.376\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"68a42f98553b4d5775cb3763bb8b0563\", element=\"f.A2F79A20F9B05A110DDA3EE27753770C.d.CBFCFD8EFDF64843B7A64E64D5A01AF5.e.377\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"68a42f98553b4d5775cb3763bb8b0563\", element=\"f.A2F79A20F9B05A110DDA3EE27753770C.d.CBFCFD8EFDF64843B7A64E64D5A01AF5.e.378\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"68a42f98553b4d5775cb3763bb8b0563\", element=\"f.A2F79A20F9B05A110DDA3EE27753770C.d.CBFCFD8EFDF64843B7A64E64D5A01AF5.e.380\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"68a42f98553b4d5775cb3763bb8b0563\", element=\"f.A2F79A20F9B05A110DDA3EE27753770C.d.CBFCFD8EFDF64843B7A64E64D5A01AF5.e.381\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"68a42f98553b4d5775cb3763bb8b0563\", element=\"f.A2F79A20F9B05A110DDA3EE27753770C.d.CBFCFD8EFDF64843B7A64E64D5A01AF5.e.382\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"68a42f98553b4d5775cb3763bb8b0563\", element=\"f.A2F79A20F9B05A110DDA3EE27753770C.d.CBFCFD8EFDF64843B7A64E64D5A01AF5.e.383\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"68a42f98553b4d5775cb3763bb8b0563\", element=\"f.A2F79A20F9B05A110DDA3EE27753770C.d.CBFCFD8EFDF64843B7A64E64D5A01AF5.e.384\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"68a42f98553b4d5775cb3763bb8b0563\", element=\"f.A2F79A20F9B05A110DDA3EE27753770C.d.CBFCFD8EFDF64843B7A64E64D5A01AF5.e.385\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"68a42f98553b4d5775cb3763bb8b0563\", element=\"f.A2F79A20F9B05A110DDA3EE27753770C.d.CBFCFD8EFDF64843B7A64E64D5A01AF5.e.386\")>]"
+R 0|2|cP|36.383
+EE n|u|36.383
+AS aQ|aR|2|cP|36.383
+SE aS|n|36.383
+M cQ:"'Limited field observations also means that little is known about many other aspects of the behavior of this highly gregarious Arctic whale, including social and reproductive behaviors, how they adapt to changing environmental conditions, or whether narwhals engage in behaviors that are not linked directly to fitness, like play.'"
+R aU|V|cQ|36.393
+EE n|u|36.393
+SE aS|n|36.393
+M cR:"\"Using drones, researchers from Florida Atlantic University's Harbor Branch Oceanographic Institute, and Canada's Department of Fisheries and Oceans, in partnership with Inuit communities in Nunavut in Canada's High Arctic, provide the first evidence of narwhals using their tusks in the wild to investigate, manipulate and influence the behavior of Arctic char (Salvelinus alpinus), including delivering sufficient force with their tusks to stun and possibly kill the fish. Researchers captured 17 distinct behaviors, which shed light on the dynamics between the narwhal, its prey and avian competitors.\""
+R aU|V|cR|36.399
+EE n|u|36.399
+SE aS|n|36.399
+M cS:"\"Results of the study, published in the journal Frontiers in Marine Science, also reveal the first evidence of likely play, specifically exploratory-object play, in narwhals as well as other fascinating insights into narwhal behavior in a changing Arctic. Aspects of the narwhals' actions for example, may also have included social learning, and possibly social instruction and personality differences among individual narwhal. These novel findings further enrich our understanding of narwhals' complex behavior.\""
+R aU|V|cS|36.405
+EE n|u|36.405
+SE aS|n|36.405
+M cT:"'Findings also provide the first reports of interactions between narwhal, fish and birds, including attempted kleptoparasitism, a \"food thief\" situation, among narwhals and glaucous gulls (Larus hyperboreus).'"
+R aU|V|cT|36.409
+EE n|u|36.409
+SE aS|n|36.409
+M cU:"'\"Narwhals are known for their \\'tusking\\' behavior, where two or more of them simultaneously raise their tusks almost vertically out of the water, crossing them in what may be a ritualistic behavior to assess a potential opponent\\'s qualities or to display those qualities to potential mates,\" said Greg O\\'Corry-Crowe, Ph.D., senior author, a research professor at FAU Harbor Branch and a National Geographic Explorer. \"But now we know that narwhal tusks have other uses, some quite unexpected, including foraging, exploration and play.\"'"
+R aU|V|cU|36.418
+EE n|u|36.418
+SE aS|n|36.418
+M cV:"'The narwhals exhibited remarkable dexterity, precision and speed of movement of the tusk, and regularly made adjustments to track the moving target. The tusk, especially the tip of the tusk, was used to interrogate and manipulate the target by brief contacts, which typically elicited a response from the fish.'"
+R aU|V|cV|36.425
+EE n|u|36.425
+SE aS|n|36.425
+M cW:"'\"I have been studying narwhal for over a decade and have always marveled at their tusks,\" said Cortney Watt, Ph.D., co-author and research scientist and team lead at Fisheries and Oceans, Canada. \"To observe them using their tusks for foraging and play is remarkable. This unique study where we set up a remote field camp and spent time filming narwhal with drones is yielding many interesting insights and is providing a bird\\'s eye view of their behavior that we have never seen before.\"'"
+R aU|V|cW|36.431
+EE n|u|36.431
+SE aS|n|36.431
+M cX:"'This research highlights how environmental changes might introduce new interspecies encounters, challenging Arctic species to adapt.'"
+R aU|V|cX|36.439
+EE n|u|36.439
+SE aS|n|36.439
+M cY:"'\"Our observations provide clear evidence of narwhals chasing fish and using their tusks to interact directly with the fish and to influence the fish\\'s behavior,\" said O\\'Corry-Crowe. \"Some of the interactions we saw appeared competitive in nature with one whale blocking or trying to block another whale\\'s access to the same target fish, while others may have been more subtle, possibly communicative and even affiliative. None appeared overtly aggressive.\"'"
+R aU|V|cY|36.444
+EE n|u|36.444
+SE aS|n|36.444
+M cZ:"'Social behaviors among the whales -- such as learning from one another -- also suggest that social processes could speed up behavioral adaptation in response to Arctic changes.'"
+R aU|V|cZ|36.452
+EE n|u|36.452
+SE aS|n|36.452
+M c0:"'\"To understand how narwhals are being affected by and adapting to the changing Arctic, field studies using innovative, non-invasive tools like drones are essential to observe them in their natural environment without disturbing them,\" said O\\'Corry-Crowe. \"Drones provide a unique, real-time view of their behavior, helping scientists gather crucial data on how narwhals are responding to shifts in ice patterns, prey availability and other environmental changes. Such studies are key to understanding the impact of global warming on these elusive animals.\"'"
+R aU|V|c0|36.458
+EE n|u|36.458
+SE aS|n|36.458
+M c1:"'Study co-authors are Maha Ghazal, Mark Gillespie and Luke Storrie, Fisheries and Oceans Canada; and Paul Galvin and Jason Harasimo, World Wildlife Fund, Canada. Watt also is an adjunct professor at the University of Manitoba.'"
+R aU|V|c1|36.462
+EE n|u|36.462
+SE aS|n|36.462
+M c2:"\"The research was supported by Fisheries and Oceans Canada; FAU Harbor Branch; the National Geographic Society; the World Wildlife Fund Canada; the Nunavut Wildlife Management Board; and Natural Resources Canada's Polar Continental Shelf Program.\""
+R aU|V|c2|36.471
+EE n|u|36.471
+M c3:"'Limited field observations also means that little is known about many other aspects of the behavior of this highly gregarious Arctic whale, including social and reproductive behaviors, how they adapt to changing environmental conditions, or whether narwhals engage in behaviors that are not linked directly to fitness, like play.\\n\\nUsing drones, researchers from Florida Atlantic University\\'s Harbor Branch Oceanographic Institute, and Canada\\'s Department of Fisheries and Oceans, in partnership with Inuit communities in Nunavut in Canada\\'s High Arctic, provide the first evidence of narwhals using their tusks in the wild to investigate, manipulate and influence the behavior of Arctic char (Salvelinus alpinus), including delivering sufficient force with their tusks to stun and possibly kill the fish. Researchers captured 17 distinct behaviors, which shed light on the dynamics between the narwhal, its prey and avian competitors.\\n\\nResults of the study, published in the journal Frontiers in Marine Science, also reveal the first evidence of likely play, specifically exploratory-object play, in narwhals as well as other fascinating insights into narwhal behavior in a changing Arctic. Aspects of the narwhals\\' actions for example, may also have included social learning, and possibly social instruction and personality differences among individual narwhal. These novel findings further enrich our understanding of narwhals\\' complex behavior.\\n\\nFindings also provide the first reports of interactions between narwhal, fish and birds, including attempted kleptoparasitism, a \"food thief\" situation, among narwhals and glaucous gulls (Larus hyperboreus).\\n\\n\"Narwhals are known for their \\'tusking\\' behavior, where two or more of them simultaneously raise their tusks almost vertically out of the water, crossing them in what may be a ritualistic behavior to assess a potential opponent\\'s qualities or to display those qualities to potential mates,\" said Greg O\\'Corry-Crowe, Ph.D., senior author, a research professor at FAU Harbor Branch and a National Geographic Explorer. \"But now we know that narwhal tusks have other uses, some quite unexpected, including foraging, exploration and play.\"\\n\\nThe narwhals exhibited remarkable dexterity, precision and speed of movement of the tusk, and regularly made adjustments to track the moving target. The tusk, especially the tip of the tusk, was used to interrogate and manipulate the target by brief contacts, which typically elicited a response from the fish.\\n\\n\"I have been studying narwhal for over a decade and have always marveled at their tusks,\" said Cortney Watt, Ph.D., co-author and research scientist and team lead at Fisheries and Oceans, Canada. \"To observe them using their tusks for foraging and play is remarkable. This unique study where we set up a remote field camp and spent time filming narwhal with drones is yielding many interesting insights and is providing a bird\\'s eye view of their behavior that we have never seen before.\"\\n\\nThis research highlights how environmental changes might introduce new interspecies encounters, challenging Arctic species to adapt.\\n\\n\"Our observations provide clear evidence of narwhals chasing fish and using their tusks to interact directly with the fish and to influence the fish\\'s behavior,\" said O\\'Corry-Crowe. \"Some of the interactions we saw appeared competitive in nature with one whale blocking or trying to block another whale\\'s access to the same target fish, while others may have been more subtle, possibly communicative and even affiliative. None appeared overtly aggressive.\"\\n\\nSocial behaviors among the whales -- such as learning from one another -- also suggest that social processes could speed up behavioral adaptation in response to Arctic changes.\\n\\n\"To understand how narwhals are being affected by and adapting to the changing Arctic, field studies using innovative, non-invasive tools like drones are essential to observe them in their natural environment without disturbing them,\" said O\\'Corry-Crowe. \"Drones provide a unique, real-time view of their behavior, helping scientists gather crucial data on how narwhals are responding to shifts in ice patterns, prey availability and other environmental changes. Such studies are key to understanding the impact of global warming on these elusive animals.\"\\n\\nStudy co-authors are Maha Ghazal, Mark Gillespie and Luke Storrie, Fisheries and Oceans Canada; and Paul Galvin and Jason Harasimo, World Wildlife Fund, Canada. Watt also is an adjunct professor at the University of Manitoba.\\n\\nThe research was supported by Fisheries and Oceans Canada; FAU Harbor Branch; the National Geographic Society; the World Wildlife Fund Canada; the Nunavut Wildlife Management Board; and Natural Resources Canada\\'s Polar Continental Shelf Program.'"
+AS a5|a6|V|c3|36.471
+R a8|V|c3|36.471
+SE a9|n|36.471
+EE n|u|38.578
+EE n|u|38.578
+AS bd|a6|V|c3|38.578
+SE be|bg|38.578
+EA a6|V|c3
+SE bh|n|38.578
+EA bj|V|c3
+SE bk|n|38.578
+EE n|u|38.839
+M c4:"<openai.OpenAI object at 0x00000190E6118950>"
+AS bo|bp|bq|c4|38.839
+SE bs|n|38.839
+M c5:"(<openai.resources.chat.completions.completions.Completions object at 0x00000190E6125BB0>,)"
+EA o|p|c5
+M c6:"{'model': 'gpt-4o', 'messages': [{'role': 'developer', 'content': 'You are a scientific article reviewer. Read and make a short(max 80 words) truthful pitch.'}, {'role': 'user', 'content': 'Limited field observations also means that little is known about many other aspects of the behavior of this highly gregarious Arctic whale, including social and reproductive behaviors, how they adapt to changing environmental conditions, or whether narwhals engage in behaviors that are not linked directly to fitness, like play.\\n\\nUsing drones, researchers from Florida Atlantic University\\'s Harbor Branch Oceanographic Institute, and Canada\\'s Department of Fisheries and Oceans, in partnership with Inuit communities in Nunavut in Canada\\'s High Arctic, provide the first evidence of narwhals using their tusks in the wild to investigate, manipulate and influence the behavior of Arctic char (Salvelinus alpinus), including delivering sufficient force with their tusks to stun and possibly kill the fish. Researchers captured 17 distinct behaviors, which shed light on the dynamics between the narwhal, its prey and avian competitors.\\n\\nResults of the study, published in the journal Frontiers in Marine Science, also reveal the first evidence of likely play, specifically exploratory-object play, in narwhals as well as other fascinating insights into narwhal behavior in a changing Arctic. Aspects of the narwhals\\' actions for example, may also have included social learning, and possibly social instruction and personality differences among individual narwhal. These novel findings further enrich our understanding of narwhals\\' complex behavior.\\n\\nFindings also provide the first reports of interactions between narwhal, fish and birds, including attempted kleptoparasitism, a \"food thief\" situation, among narwhals and glaucous gulls (Larus hyperboreus).\\n\\n\"Narwhals are known for their \\'tusking\\' behavior, where two or more of them simultaneously raise their tusks almost vertically out of the water, crossing them in what may be a ritualistic behavior to assess a potential opponent\\'s qualities or to display those qualities to potential mates,\" said Greg O\\'Corry-Crowe, Ph.D., senior author, a research professor at FAU Harbor Branch and a National Geographic Explorer. \"But now we know that narwhal tusks have other uses, some quite unexpected, including foraging, exploration and play.\"\\n\\nThe narwhals exhibited remarkable dexterity, precision and speed of movement of the tusk, and regularly made adjustments to track the moving target. The tusk, especially the tip of the tusk, was used to interrogate and manipulate the target by brief contacts, which typically elicited a response from the fish.\\n\\n\"I have been studying narwhal for over a decade and have always marveled at their tusks,\" said Cortney Watt, Ph.D., co-author and research scientist and team lead at Fisheries and Oceans, Canada. \"To observe them using their tusks for foraging and play is remarkable. This unique study where we set up a remote field camp and spent time filming narwhal with drones is yielding many interesting insights and is providing a bird\\'s eye view of their behavior that we have never seen before.\"\\n\\nThis research highlights how environmental changes might introduce new interspecies encounters, challenging Arctic species to adapt.\\n\\n\"Our observations provide clear evidence of narwhals chasing fish and using their tusks to interact directly with the fish and to influence the fish\\'s behavior,\" said O\\'Corry-Crowe. \"Some of the interactions we saw appeared competitive in nature with one whale blocking or trying to block another whale\\'s access to the same target fish, while others may have been more subtle, possibly communicative and even affiliative. None appeared overtly aggressive.\"\\n\\nSocial behaviors among the whales -- such as learning from one another -- also suggest that social processes could speed up behavioral adaptation in response to Arctic changes.\\n\\n\"To understand how narwhals are being affected by and adapting to the changing Arctic, field studies using innovative, non-invasive tools like drones are essential to observe them in their natural environment without disturbing them,\" said O\\'Corry-Crowe. \"Drones provide a unique, real-time view of their behavior, helping scientists gather crucial data on how narwhals are responding to shifts in ice patterns, prey availability and other environmental changes. Such studies are key to understanding the impact of global warming on these elusive animals.\"\\n\\nStudy co-authors are Maha Ghazal, Mark Gillespie and Luke Storrie, Fisheries and Oceans Canada; and Paul Galvin and Jason Harasimo, World Wildlife Fund, Canada. Watt also is an adjunct professor at the University of Manitoba.\\n\\nThe research was supported by Fisheries and Oceans Canada; FAU Harbor Branch; the National Geographic Society; the World Wildlife Fund Canada; the Nunavut Wildlife Management Board; and Natural Resources Canada\\'s Polar Continental Shelf Program.'}]}"
+EA r|s|c6
+M c7:"ChatCompletion(id='chatcmpl-B6zQ2VclEYl9bIK2L0Y2A15Irq5cT', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='In a groundbreaking study published in Frontiers in Marine Science, researchers used drones to capture unprecedented footage of narwhals employing their tusks for foraging, play, and social interactions. This research, involving collaboration with Inuit communities, reveals narwhals stunning Arctic char and engaging in kleptoparasitism with glaucous gulls. It offers unique insights into narwhal behavior and adaptation to a warming Arctic, highlighting the importance of innovative, non-invasive observational techniques in understanding the impacts of climate change on elusive Arctic species.', refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None))], created=1741005762, model='gpt-4o-2024-08-06', object='chat.completion', service_tier='default', system_fingerprint='fp_f9f4fb6dbf', usage=CompletionUsage(completion_tokens=108, prompt_tokens=969, total_tokens=1077, completion_tokens_details=CompletionTokensDetails(accepted_prediction_tokens=0, audio_tokens=0, reasoning_tokens=0, rejected_prediction_tokens=0), prompt_tokens_details=PromptTokensDetails(audio_tokens=0, cached_tokens=0)))"
+R bx|by|c7|42.16
+EE n|u|42.16
+AS bA|bB|by|c7|42.16
+M c8:"'In a groundbreaking study published in Frontiers in Marine Science, researchers used drones to capture unprecedented footage of narwhals employing their tusks for foraging, play, and social interactions. This research, involving collaboration with Inuit communities, reveals narwhals stunning Arctic char and engaging in kleptoparasitism with glaucous gulls. It offers unique insights into narwhal behavior and adaptation to a warming Arctic, highlighting the importance of innovative, non-invasive observational techniques in understanding the impacts of climate change on elusive Arctic species.'"
+AS bC|bD|V|c8|42.16
+R bF|V|c8|42.16
+EE n|u|42.16
+AS bG|bH|V|c8|42.16
+SE aS|n|42.169
+M c9:"'Drone Captures Narwhals Using Their Tusks to Explore, Forage and Play'"
+R aU|V|c9|42.17
+EE n|u|42.17
+SE at|n|42.17
+EA ax|V|ay
+R az|V|cM|42.178
+EE n|u|42.178
+SE aS|n|42.178
+M da:"'Feb. 28, 2025 \u2014'"
+R aU|V|da|42.186
+EE n|u|42.186
+SE bK|n|42.186
+EA V|V|da
+R bM|V|da|42.186
+EE n|u|42.186
+M db:"{'title': 'Drone Captures Narwhals Using Their Tusks to Explore, Forage and Play', 'link': 'https://www.sciencedaily.com/releases/2025/02/250228113950.htm', 'date': 'Feb. 28, 2025 \u2014', 'text': 'Limited field observations also means that little is known about many other aspects of the behavior of this highly gregarious Arctic whale, including social and reproductive behaviors, how they adapt to changing environmental conditions, or whether narwhals engage in behaviors that are not linked directly to fitness, like play.\\n\\nUsing drones, researchers from Florida Atlantic University\\'s Harbor Branch Oceanographic Institute, and Canada\\'s Department of Fisheries and Oceans, in partnership with Inuit communities in Nunavut in Canada\\'s High Arctic, provide the first evidence of narwhals using their tusks in the wild to investigate, manipulate and influence the behavior of Arctic char (Salvelinus alpinus), including delivering sufficient force with their tusks to stun and possibly kill the fish. Researchers captured 17 distinct behaviors, which shed light on the dynamics between the narwhal, its prey and avian competitors.\\n\\nResults of the study, published in the journal Frontiers in Marine Science, also reveal the first evidence of likely play, specifically exploratory-object play, in narwhals as well as other fascinating insights into narwhal behavior in a changing Arctic. Aspects of the narwhals\\' actions for example, may also have included social learning, and possibly social instruction and personality differences among individual narwhal. These novel findings further enrich our understanding of narwhals\\' complex behavior.\\n\\nFindings also provide the first reports of interactions between narwhal, fish and birds, including attempted kleptoparasitism, a \"food thief\" situation, among narwhals and glaucous gulls (Larus hyperboreus).\\n\\n\"Narwhals are known for their \\'tusking\\' behavior, where two or more of them simultaneously raise their tusks almost vertically out of the water, crossing them in what may be a ritualistic behavior to assess a potential opponent\\'s qualities or to display those qualities to potential mates,\" said Greg O\\'Corry-Crowe, Ph.D., senior author, a research professor at FAU Harbor Branch and a National Geographic Explorer. \"But now we know that narwhal tusks have other uses, some quite unexpected, including foraging, exploration and play.\"\\n\\nThe narwhals exhibited remarkable dexterity, precision and speed of movement of the tusk, and regularly made adjustments to track the moving target. The tusk, especially the tip of the tusk, was used to interrogate and manipulate the target by brief contacts, which typically elicited a response from the fish.\\n\\n\"I have been studying narwhal for over a decade and have always marveled at their tusks,\" said Cortney Watt, Ph.D., co-author and research scientist and team lead at Fisheries and Oceans, Canada. \"To observe them using their tusks for foraging and play is remarkable. This unique study where we set up a remote field camp and spent time filming narwhal with drones is yielding many interesting insights and is providing a bird\\'s eye view of their behavior that we have never seen before.\"\\n\\nThis research highlights how environmental changes might introduce new interspecies encounters, challenging Arctic species to adapt.\\n\\n\"Our observations provide clear evidence of narwhals chasing fish and using their tusks to interact directly with the fish and to influence the fish\\'s behavior,\" said O\\'Corry-Crowe. \"Some of the interactions we saw appeared competitive in nature with one whale blocking or trying to block another whale\\'s access to the same target fish, while others may have been more subtle, possibly communicative and even affiliative. None appeared overtly aggressive.\"\\n\\nSocial behaviors among the whales -- such as learning from one another -- also suggest that social processes could speed up behavioral adaptation in response to Arctic changes.\\n\\n\"To understand how narwhals are being affected by and adapting to the changing Arctic, field studies using innovative, non-invasive tools like drones are essential to observe them in their natural environment without disturbing them,\" said O\\'Corry-Crowe. \"Drones provide a unique, real-time view of their behavior, helping scientists gather crucial data on how narwhals are responding to shifts in ice patterns, prey availability and other environmental changes. Such studies are key to understanding the impact of global warming on these elusive animals.\"\\n\\nStudy co-authors are Maha Ghazal, Mark Gillespie and Luke Storrie, Fisheries and Oceans Canada; and Paul Galvin and Jason Harasimo, World Wildlife Fund, Canada. Watt also is an adjunct professor at the University of Manitoba.\\n\\nThe research was supported by Fisheries and Oceans Canada; FAU Harbor Branch; the National Geographic Society; the World Wildlife Fund Canada; the Nunavut Wildlife Management Board; and Natural Resources Canada\\'s Polar Continental Shelf Program.', 'review': 'In a groundbreaking study published in Frontiers in Marine Science, researchers used drones to capture unprecedented footage of narwhals employing their tusks for foraging, play, and social interactions. This research, involving collaboration with Inuit communities, reveals narwhals stunning Arctic char and engaging in kleptoparasitism with glaucous gulls. It offers unique insights into narwhal behavior and adaptation to a warming Arctic, highlighting the importance of innovative, non-invasive observational techniques in understanding the impacts of climate change on elusive Arctic species.'}"
+AS bN|bO|s|db|42.186
+EE bg|u|42.186
+EE ae|u|42.186
+EE ab|u|42.186
+P dc:P|x|y|e|57
+M dd:"[{'title': 'From Scraps to Sips: Everyday Biomass Produces Drinking Water from Thin Air', 'link': 'https://www.sciencedaily.com/releases/2025/02/250225121530.htm', 'date': 'Feb. 25, 2025 \u2014', 'text': 'This new \"molecularly functionalized biomass hydrogels\" system can convert a wide range of natural products into sorbents, materials that absorb liquids. By combining these sorbents with mild heat, the researchers can harvest gallons of drinkable water out of the atmosphere, even in dry conditions.\\n\\n\"With this breakthrough, we\\'ve created a universal molecular engineering strategy that allows diverse natural materials to be transformed into high-efficiency sorbents,\" said Guihua Yu, a professor of materials science and mechanical engineering and Texas Materials Institute at UT Austin. \"This opens up an entirely new way to think about sustainable water collection, marking a big step towards practical water harvesting systems for households and small community scale.\"\\n\\nIn field tests, the researchers generated 14.19 liters (3.75 gallons) of clean water per kilogram of sorbent daily. Most sorbents can generate between 1 and 5 liters per kilogram per day.\\n\\nThe new research was published in Advanced Materials.\\n\\nThis system represents a new way of designing sorbents, the researchers say. Instead of the traditional \"select-and-combine\" approach, which requires picking specific materials for specific functions, this general molecular strategy makes it possible to turn almost any biomass into an efficient water harvester.\\n\\nUnlike existing synthetic sorbents, which use petrochemicals and generally require high energy inputs, the UT Austin team\\'s biomass-based hydrogel is biodegradable, scalable, and requires minimal energy to release water. The secret lies in a two-step molecular engineering process that imparts hygroscopic properties and thermoresponsive behavior to any biomass-based polysaccharide, such as cellulose, starch, or chitosan.\\n\\n\"At the end of the day, clean water access should be simple, sustainable, and scalable,\" said Weixin Guan, a senior doctoral student and the study\\'s lead researcher. \"This material gives us a way to tap into nature\\'s most abundant resources and make water from air -- anytime, anywhere.\"\\n\\nThe latest innovation is part of Yu\\'s years-long quest to develop solutions for people lacking access to clean drinking water. He\\'s developed water-generating hydrogels throughout his career, adapting them for the driest conditions. He recently created an injectable water filtration system, and he has applied his hydrogel technology to farming.\\n\\nThe research team is now working on scaling production and designing real-world device systems for commercialization, including portable water harvesters, self-sustaining irrigation systems, and emergency drinking water devices. Since the beginning, the researchers have focused on scalability and the ability to translate this research into solutions that can help people around the world.\\n\\n\"The biggest challenge in sustainable water harvesting is developing a solution that scales up efficiently and remains practical outside the lab,\" said Yaxuan Zhao, a graduate researcher in Yu\\'s lab. \"Since this hydrogel can be fabricated from widely available biomass and operates with minimal energy input, it has strong potential for large-scale production and deployment in off-grid communities, emergency relief efforts, and decentralized water systems.\"', 'review': 'Researchers at UT Austin have developed an innovative system using \"molecularly functionalized biomass hydrogels\" to efficiently harvest water from the atmosphere, even in arid conditions. This groundbreaking bio-based technology transforms diverse natural materials into highly efficient and biodegradable sorbents using a new molecular engineering strategy, achieving up to 14.19 liters of water per kilogram daily. The scalable, energy-efficient solution offers promising applications for sustainable household water systems, emergency relief, and off-grid communities, aiming to improve global access to clean water. Published in Advanced Materials.'}, {'title': 'Scientists Design Battery That Runs on Atomic Waste', 'link': 'https://www.sciencedaily.com/releases/2025/02/250225121528.htm', 'date': 'Feb. 25, 2025 \u2014', 'text': 'Nuclear power plants, which generate about 20% of all electricity produced in the United States, produce almost no greenhouse gas emissions. However, these systems do create radioactive waste, which can be dangerous to human health and the environment. Safely disposing of this waste can be challenging.\\n\\nUsing a combination of scintillator crystals, high-density materials that emit light when they absorb radiation, and solar cells, the team, led by researchers from The Ohio State University, demonstrated that ambient gamma radiation could be harvested to produce a strong enough electric output to power microelectronics, like microchips.\\n\\nTo test this battery, which is a prototype about 4 cubic centimeters small, researchers used two different radioactive sources, cesium-137, and cobalt-60, some of the most significant fission products that come from spent nuclear fuel. The battery was tested at Ohio State\\'s Nuclear Reactor Laboratory. The NRL supports student and faculty research, student education, and service to industry -- it does not produce electrical power.\\n\\nTheir results showed that when cesium-137 was used, the battery generated 288 nanowatts. Yet with the much stronger isotope cobalt-60, the battery produced 1.5 microwatts of power, about enough to switch on a tiny sensor.\\n\\nAlthough most power outputs for homes and electronics are measured in kilowatts, this suggests that with the right power source, such devices could be scaled up to target applications at or beyond the watts level, said Raymond Cao, lead author of the study and a professor in mechanical and aerospace engineering at Ohio State.\\n\\nThe study was recently published in the journal Optical Materials: X.\\n\\nThe researchers said these batteries would be used near where the nuclear waste is produced, such as in nuclear waste storage pools or nuclear systems for space and deep sea exploration -- they aren\\'t designed for public use. Fortunately, although the gamma radiation utilized in this work is about a hundred times more penetrating than a normal X-ray or CT scan, the battery itself does not incorporate radioactive materials, meaning it is still safe to touch.\\n\\n\"We\\'re harvesting something considered as waste and by nature, trying to turn it into treasure,\" said Cao, who also serves as the director of Ohio State\\'s Nuclear Reactor Lab.\\n\\nAccording to the study, the team\\'s battery may also have experienced an increase in power due to the makeup of the prototype scintillator crystal the team opted to use. They found that even the shape and size of the crystals can impact the final electrical output, as a larger volume allows it to absorb more radiation and convert that extra energy into more light. A larger surface area also helps the solar cell generate power.\\n\\n\"These are breakthrough results in terms of power output,\" said Ibrahim Oksuz, co-author of the study and a research associate in mechanical and aerospace engineering at Ohio State. \"This two-step process is still in its preliminary stages, but the next step involves generating greater watts with scale-up constructs.\"\\n\\nSince batteries of this type would most likely end up in environments where high levels of radiation already exist and aren\\'t easily accessible to the public, these long-lasting devices wouldn\\'t pollute their surroundings. Even more significantly, they could also operate without the need for routine maintenance.\\n\\nScaling this technology up would be costly unless these batteries could be reliably manufactured, said Cao. Further research is needed to assess the batteries\\' usefulness and limitations, including how long they might last once safely implemented, said Oksuz.\\n\\n\"The nuclear battery concept is very promising,\" he said. \"There\\'s still lots of room for improvement, but I believe in the future, this approach will carve an important space for itself in both the energy production and sensors industry.\"\\n\\nThis work was supported by the U.S. Department of Energy\\'s National Nuclear Security Administration and the U.S. Department of Energy\\'s Office of Energy Efficiency and Renewable Energy. Other co-authors include Sabin Neupane and Yanfa Yan from The University of Toledo.', 'review': \"This study explores an innovative approach to harnessing gamma radiation from nuclear waste, transforming it into a functional power source for microelectronics. Researchers at Ohio State University developed a prototype battery using scintillator crystals and solar cells, achieving promising results. While it's currently at the preliminary stage, the technology shows potential for specialized applications such as in radiation-intensive environments, with minimal pollution. This breakthrough, supported by U.S. Department of Energy initiatives, could revolutionize energy solutions for niche markets.\"}, {'title': 'Materials Incorporated Into Quantum Qubit Platform', 'link': 'https://www.sciencedaily.com/releases/2025/02/250225121643.htm', 'date': 'Feb. 25, 2025 \u2014', 'text': '\"Our hope for quantum computation is that it will aid chemists, materials scientists and engineers working on the design and manufacturing of new materials that are so important to our daily lives,\" said Michael Manfra, scientific director of Microsoft Quantum Lab West Lafayette and the Bill and Dee O\\'Brien Distinguished Professor of Physics and Astronomy, professor of materials engineering, and professor of electrical and computer engineering at Purdue. \"The promise of quantum computation is in accelerating scientific discovery and its translation into useful technology. For example, if quantum computers reduce the time and cost to produce new lifesaving therapeutic drugs, that is real societal impact.\"\\n\\n\\n\\n\\n\\n\\n\\nQuantum science and engineering at Purdue is a pillar of the Purdue Computes initiative, which is focused on advancing research in computing, physical AI, semiconductors and quantum technologies.\\n\\n\"This research breakthrough in the measurement of the state of quasi particles is a milestone in the development of topological quantum computing, and creates a watershed moment in the semiconductor-superconductor hybrid structure,\" Purdue President Mung Chiang said. \"Marking also the latest success in the strategic initiative of Purdue Computes, the deep collaboration that Professor Manfra and his team have created with the Microsoft Quantum Lab West Lafayette on the Purdue campus exemplifies the most impactful industry research partnership at any American university today.\"\\n\\nMost approaches to quantum computers rely on local degrees of freedom to encode information. The spin of an electron is a classic example of a qubit. But an individual spin is prone to disturbance -- by relatively common things like heat, vibrations or interactions with other quantum particles -- which can corrupt quantum information stored in the qubit, necessitating a great deal of effort in detecting and correcting errors. Instead of spin, topological quantum computers store information in a more distributed manner; the qubit state is encoded in the state of many particles acting in concert. Consequently, it is harder to scramble the information as the state of all the particles must be changed to alter the qubit state.\\n\\nIn the Nature paper, the Microsoft team was able to accurately and quickly measure the state of quasi particles that form the basis of the qubit.\\n\\n\"The device is used to measure a basic property of a topological qubit quickly,\" Manfra said. \"The team is excited to build on these positive results.\"\\n\\n\"The team in West Lafayette pushed existing epitaxial technology to a new state-of-the-art for semiconductor-superconductor hybrid structures to ensure a perfect interface between each of the building blocks of the Microsoft hybrid system,\" said Sergei Gronin, a Microsoft Quantum Lab scientist.\\n\\n\"The materials quality that is required for quantum computing chips necessitates constant improvements, so that\\'s one of the biggest challenges,\" Gronin said. \"First, we had to adjust and improve semiconductor technology to meet a new level that nobody was able to achieve before. But equally important was how to create this hybrid system. To do that, we had to merge a semiconducting part and a superconducting part. And that means you need to perfect the semiconductor and the superconductor and perfect the interface between them.\"\\n\\nWhile work discussed in the Nature article was performed by Microsoft employees, the exposure to industrial-scale research and development is an outstanding opportunity for Purdue students in Manfra\\'s academic group as well. John Watson, Geoffrey Gardner and Saeed Fallahi, who are among the coauthors of the paper, earned their doctoral degrees under Manfra and now work for Microsoft Quantum at locations in Redmond, Washington, and Copenhagen, Denmark. Most of Manfra\\'s former students now work for quantum computing companies, including Microsoft. Tyler Lindemann, who works in the West Lafayette lab and helped to build the hybrid semiconductor-superconductor structures required for the device, is earning a doctoral degree from Purdue under Manfra\\'s supervision.\\n\\n\"Working in Professor Manfra\\'s lab in conjunction with my work for Microsoft Quantum has given me a head start in my professional development, and been fruitful for my academic work,\" Lindemann said. \"At the same time, many of the world-class scientists and engineers at Microsoft Quantum have some background in academia, and being able to draw from their knowledge and experience is an indispensable resource in my graduate studies. From both perspectives, it\\'s a great opportunity.\"', 'review': \"This article highlights a significant breakthrough in quantum computing, achieved through the synergistic collaboration between Purdue University and Microsoft Quantum Lab. The researchers have advanced the measurement of topological qubits, addressing a major hurdle in quantum computation's development. This accomplishment not only promises to accelerate scientific discoveries but also fosters transformative technology applications, such as improved drug design. Additionally, Purdue students benefit immensely from this industrial-scale research exposure, blending academic excellence with cutting-edge industry practices, setting a precedent for impactful academia-industry collaboration.\"}, {'title': 'Drone Captures Narwhals Using Their Tusks to Explore, Forage and Play', 'link': 'https://www.sciencedaily.com/releases/2025/02/250228113950.htm', 'date': 'Feb. 28, 2025 \u2014', 'text': 'Limited field observations also means that little is known about many other aspects of the behavior of this highly gregarious Arctic whale, including social and reproductive behaviors, how they adapt to changing environmental conditions, or whether narwhals engage in behaviors that are not linked directly to fitness, like play.\\n\\nUsing drones, researchers from Florida Atlantic University\\'s Harbor Branch Oceanographic Institute, and Canada\\'s Department of Fisheries and Oceans, in partnership with Inuit communities in Nunavut in Canada\\'s High Arctic, provide the first evidence of narwhals using their tusks in the wild to investigate, manipulate and influence the behavior of Arctic char (Salvelinus alpinus), including delivering sufficient force with their tusks to stun and possibly kill the fish. Researchers captured 17 distinct behaviors, which shed light on the dynamics between the narwhal, its prey and avian competitors.\\n\\nResults of the study, published in the journal Frontiers in Marine Science, also reveal the first evidence of likely play, specifically exploratory-object play, in narwhals as well as other fascinating insights into narwhal behavior in a changing Arctic. Aspects of the narwhals\\' actions for example, may also have included social learning, and possibly social instruction and personality differences among individual narwhal. These novel findings further enrich our understanding of narwhals\\' complex behavior.\\n\\nFindings also provide the first reports of interactions between narwhal, fish and birds, including attempted kleptoparasitism, a \"food thief\" situation, among narwhals and glaucous gulls (Larus hyperboreus).\\n\\n\"Narwhals are known for their \\'tusking\\' behavior, where two or more of them simultaneously raise their tusks almost vertically out of the water, crossing them in what may be a ritualistic behavior to assess a potential opponent\\'s qualities or to display those qualities to potential mates,\" said Greg O\\'Corry-Crowe, Ph.D., senior author, a research professor at FAU Harbor Branch and a National Geographic Explorer. \"But now we know that narwhal tusks have other uses, some quite unexpected, including foraging, exploration and play.\"\\n\\nThe narwhals exhibited remarkable dexterity, precision and speed of movement of the tusk, and regularly made adjustments to track the moving target. The tusk, especially the tip of the tusk, was used to interrogate and manipulate the target by brief contacts, which typically elicited a response from the fish.\\n\\n\"I have been studying narwhal for over a decade and have always marveled at their tusks,\" said Cortney Watt, Ph.D., co-author and research scientist and team lead at Fisheries and Oceans, Canada. \"To observe them using their tusks for foraging and play is remarkable. This unique study where we set up a remote field camp and spent time filming narwhal with drones is yielding many interesting insights and is providing a bird\\'s eye view of their behavior that we have never seen before.\"\\n\\nThis research highlights how environmental changes might introduce new interspecies encounters, challenging Arctic species to adapt.\\n\\n\"Our observations provide clear evidence of narwhals chasing fish and using their tusks to interact directly with the fish and to influence the fish\\'s behavior,\" said O\\'Corry-Crowe. \"Some of the interactions we saw appeared competitive in nature with one whale blocking or trying to block another whale\\'s access to the same target fish, while others may have been more subtle, possibly communicative and even affiliative. None appeared overtly aggressive.\"\\n\\nSocial behaviors among the whales -- such as learning from one another -- also suggest that social processes could speed up behavioral adaptation in response to Arctic changes.\\n\\n\"To understand how narwhals are being affected by and adapting to the changing Arctic, field studies using innovative, non-invasive tools like drones are essential to observe them in their natural environment without disturbing them,\" said O\\'Corry-Crowe. \"Drones provide a unique, real-time view of their behavior, helping scientists gather crucial data on how narwhals are responding to shifts in ice patterns, prey availability and other environmental changes. Such studies are key to understanding the impact of global warming on these elusive animals.\"\\n\\nStudy co-authors are Maha Ghazal, Mark Gillespie and Luke Storrie, Fisheries and Oceans Canada; and Paul Galvin and Jason Harasimo, World Wildlife Fund, Canada. Watt also is an adjunct professor at the University of Manitoba.\\n\\nThe research was supported by Fisheries and Oceans Canada; FAU Harbor Branch; the National Geographic Society; the World Wildlife Fund Canada; the Nunavut Wildlife Management Board; and Natural Resources Canada\\'s Polar Continental Shelf Program.', 'review': 'In a groundbreaking study published in Frontiers in Marine Science, researchers used drones to capture unprecedented footage of narwhals employing their tusks for foraging, play, and social interactions. This research, involving collaboration with Inuit communities, reveals narwhals stunning Arctic char and engaging in kleptoparasitism with glaucous gulls. It offers unique insights into narwhal behavior and adaptation to a warming Arctic, highlighting the importance of innovative, non-invasive observational techniques in understanding the impacts of climate change on elusive Arctic species.'}]"
+R dc|2|dd|42.186
+EE n|u|42.186
+P de:w|x|y|e|15
+AS de|7|2|dd|42.186
+M dg:"send_email"
+M dh:"email_task"
+M di:"C:\\Users\\PerezLai\\Desktop\\RPA\\my-news-robot\\email_task.py"
+P df:dg|dh|di|e|8
+SE df|n|42.186
+M dj:"to_email"
+M dk:"'vitafull96@gmail.com'"
+EA dj|V|dk
+EA 7|2|dd
+P dl:dg|dh|di|e|9
+M dm:"subject"
+M dn:"'Latest Research Articles'"
+AS dl|dm|V|dn|42.186
+P do:dg|dh|di|e|10
+M dp:"from_email"
+M dq:"'my.news.robot123@gmail.com'"
+AS do|dp|V|dq|42.189
+P dr:dg|dh|di|e|11
+M ds:"password"
+M dt:"<redacted>"
+AS dr|ds|V|dt|42.189
+M dv:"format_email_content_html"
+P du:dv|dh|di|e|36
+SE du|n|42.189
+EA 7|2|dd
+P dw:dv|dh|di|e|37
+M dx:"email_content"
+M dy:"'<html><body>'"
+AS dw|dx|V|dy|42.189
+M dA:"for (i, article) in enumerate(articles, 1)"
+P dz:dA|dh|di|e|41
+SE dz|ab|42.189
+M dC:"Step: for (i, article) in enumerate(articles, 1)"
+P dB:dC|dh|di|e|41
+SE dB|ae|42.189
+M dD:"i"
+EA dD|M|N
+EA bO|s|bP
+EE ae|u|42.189
+SE dB|ae|42.189
+EA dD|M|aF
+EA bO|s|ci
+EE ae|u|42.189
+SE dB|ae|42.189
+EA dD|M|bV
+EA bO|s|cI
+EE ae|u|42.189
+SE dB|ae|42.189
+EA dD|M|co
+EA bO|s|db
+EE ae|u|42.189
+EE ab|u|42.189
+P dE:dv|dh|di|e|49
+M dF:"'<html><body><p>Hi there,</p><p>Here are the top scientific articles for you:</p><ul><li><strong>Title:</strong> <a href=\\'https://www.sciencedaily.com/releases/2025/02/250225121530.htm\\'>From Scraps to Sips: Everyday Biomass Produces Drinking Water from Thin Air</a><br><strong>Date:</strong> Feb. 25, 2025 \u2014<br><strong>AI Review:</strong> Researchers at UT Austin have developed an innovative system using \"molecularly functionalized biomass hydrogels\" to efficiently harvest water from the atmosphere, even in arid conditions. This groundbreaking bio-based technology transforms diverse natural materials into highly efficient and biodegradable sorbents using a new molecular engineering strategy, achieving up to 14.19 liters of water per kilogram daily. The scalable, energy-efficient solution offers promising applications for sustainable household water systems, emergency relief, and off-grid communities, aiming to improve global access to clean water. Published in Advanced Materials.</li><br><br><li><strong>Title:</strong> <a href=\\'https://www.sciencedaily.com/releases/2025/02/250225121528.htm\\'>Scientists Design Battery That Runs on Atomic Waste</a><br><strong>Date:</strong> Feb. 25, 2025 \u2014<br><strong>AI Review:</strong> This study explores an innovative approach to harnessing gamma radiation from nuclear waste, transforming it into a functional power source for microelectronics. Researchers at Ohio State University developed a prototype battery using scintillator crystals and solar cells, achieving promising results. While it\\'s currently at the preliminary stage, the technology shows potential for specialized applications such as in radiation-intensive environments, with minimal pollution. This breakthrough, supported by U.S. Department of Energy initiatives, could revolutionize energy solutions for niche markets.</li><br><br><li><strong>Title:</strong> <a href=\\'https://www.sciencedaily.com/releases/2025/02/250225121643.htm\\'>Materials Incorporated Into Quantum Qubit Platform</a><br><strong>Date:</strong> Feb. 25, 2025 \u2014<br><strong>AI Review:</strong> This article highlights a significant breakthrough in quantum computing, achieved through the synergistic collaboration between Purdue University and Microsoft Quantum Lab. The researchers have advanced the measurement of topological qubits, addressing a major hurdle in quantum computation\\'s development. This accomplishment not only promises to accelerate scientific discoveries but also fosters transformative technology applications, such as improved drug design. Additionally, Purdue students benefit immensely from this industrial-scale research exposure, blending academic excellence with cutting-edge industry practices, setting a precedent for impactful academia-industry collaboration.</li><br><br><li><strong>Title:</strong> <a href=\\'https://www.sciencedaily.com/releases/2025/02/250228113950.htm\\'>Drone Captures Narwhals Using Their Tusks to Explore, Forage and Play</a><br><strong>Date:</strong> Feb. 28, 2025 \u2014<br><strong>AI Review:</strong> In a groundbreaking study published in Frontiers in Marine Science, researchers used drones to capture unprecedented footage of narwhals employing their tusks for foraging, play, and social interactions. This research, involving collaboration with Inuit communities, reveals narwhals stunning Arctic char and engaging in kleptoparasitism with glaucous gulls. It offers unique insights into narwhal behavior and adaptation to a warming Arctic, highlighting the importance of innovative, non-invasive observational techniques in understanding the impacts of climate change on elusive Arctic species.</li><br><br></ul><p>Best regards,<br>Your Research Bot</p></body></html>'"
+R dE|V|dF|42.189
+EE n|u|42.189
+P dG:dg|dh|di|e|13
+M dH:"body"
+AS dG|dH|V|dF|42.189
+P dI:dg|dh|di|e|15
+M dJ:"msg"
+M dK:"EmailMessage"
+M dL:"<email.message.EmailMessage object at 0x00000190E60BBF20>"
+AS dI|dJ|dK|dL|42.202
+P dM:dg|dh|di|e|21
+M dN:"context"
+M dO:"SSLContext"
+M dP:"<truststore._api.SSLContext object at 0x00000190E6191450>"
+AS dM|dN|dO|dP|42.489
+M dR:"SMTP_SSL.__init__"
+M dS:"smtplib"
+M dT:"C:\\ProgramData\\sema4ai\\ht\\a81d537_c5e81ff_691db988\\Lib\\smtplib.py"
+P dQ:dR|dS|dT|e|1016
+SE dQ|n|42.489
+M dU:"host"
+M dV:"'smtp.gmail.com'"
+EA dU|V|dV
+M dW:"port"
+M dX:"465"
+EA dW|M|dX
+M dY:"local_hostname"
+EA dY|Y|Z
+EE n|u|43.805
+M d0:"SMTP.login"
+P dZ:d0|dS|dT|e|686
+SE dZ|n|43.805
+M d1:"user"
+EA d1|V|dq
+EA ds|V|dt
+P d2:d0|dS|dT|e|745
+M d3:"(235, b'2.7.0 Accepted')"
+R d2|p|d3|44.079
+EE n|u|44.079
+M d5:"SMTP.send_message"
+P d4:d5|dS|dT|e|901
+SE d4|n|44.079
+EA dJ|dK|dL
+M d6:"from_addr"
+EA d6|Y|Z
+M d7:"to_addrs"
+EA d7|Y|Z
+M d8:"mail_options"
+EA d8|p|q
+M d9:"rcpt_options"
+EA d9|p|q
+P ea:d5|dS|dT|e|975
+R ea|s|t|46.098
+EE n|u|46.098
+M eb:"stdout"
+M ec:"Email successfully sent to vitafull96@gmail.com"
+C eb|ec|46.11
+M ed:"\n"
+C eb|ed|46.11
+EE n|u|46.11
+M ef:"close_browser"
+P ee:ef|x|y|e|22
+SE ee|n|46.11
+M eh:"BrowserManagementKeywords.close_all_browsers"
+P eg:eh|bb|bc|e|40
+SE eg|n|46.11
+EE n|u|48.242
+EE n|u|48.242
+EE n|u|48.242
+C C|w|48.242
+M ei:" status: "
+C f|ei|48.243
+M ej:"PASS\n"
+C f|ej|48.244
+M ek:"================================================================================\n"
+C f|ek|48.244
+ET u|e|48.244
+M em:"Teardown tasks"
+M en:"teardown"
+P el:em|en|e|e|0
+ST el|48.244
+M eo:"Process snapshot"
+SPS eo|48.244
+M ep:"System information:\nMemory: Total: 31.9 G, Available: 18.9 G, Used: 40.7 %\nCPUs: 12"
+P eq:e|e|e|e|0
+L I|ep|eq|0|52.358
+M er:"Current Process: python.exe (pid: 21276, status: running)\nCommand Line: C:\\ProgramData\\sema4ai\\ht\\a81d537_c5e81ff_691db988\\python.exe -m robocorp.tasks run c:\\Users\\PerezLai\\Desktop\\RPA\\my-news-robot\\tasks.py -t minimal_task\nStarted: 14:42:02\nParent pid: 27792\nResident Set Size: 100.8 M\nVirtual Memory Size: 81.9 M"
+L I|er|eq|0|52.386
+M es:"OutputToPortThread|Thread ID: 40524 (daemon)"
+STD es|52.387
+M et:"C:\\ProgramData\\sema4ai\\ht\\a81d537_c5e81ff_691db988\\Lib\\threading.py"
+M eu:"_bootstrap"
+M ev:"self._bootstrap_inner()"
+TBE et|1032|eu|ev
+M ew:"self"
+M ex:"Thread"
+M ey:"<Thread(OutputToPortThread, started daemon 40524)>"
+TBV ew|ex|ey
+M ez:"_bootstrap_inner"
+M eA:"self.run()"
+TBE et|1075|ez|eA
+TBV ew|ex|ey
+M eB:"run"
+M eC:"self._target(*self._args, **self._kwargs)"
+TBE et|1012|eB|eC
+TBV ew|ex|ey
+M eD:"C:\\ProgramData\\sema4ai\\ht\\a81d537_c5e81ff_691db988\\Lib\\site-packages\\robocorp\\tasks\\_log_output_setup.py"
+M eE:"write_in_thread"
+M eF:"msg = q.get()"
+TBE eD|73|eE|eF
+M eG:"'ST el|48.237\\n'"
+TBV dJ|V|eG
+M eH:"client_socket"
+M eI:"socket"
+M eJ:"<socket.socket fd=940, family=2, type=1, proto=0, laddr=('127.0.0.1', 53253), raddr=('127.0.0.1', 44845)>"
+TBV eH|eI|eJ
+M eK:"log"
+M eL:"module"
+M eM:"<module 'robocorp.log' from 'C:\\\\ProgramData\\\\sema4ai\\\\ht\\\\a81d537_c5e81ff_691db988\\\\Lib\\\\site-packages\\\\robocorp\\\\log\\\\__init__.py'>"
+TBV eK|eL|eM
+M eN:"port_in_env"
+M eO:"'44845'"
+TBV eN|V|eO
+M eP:"q"
+M eQ:"Queue"
+M eR:"<queue.Queue object at 0x00000190E23633E0>"
+TBV eP|eQ|eR
+M eS:"C:\\ProgramData\\sema4ai\\ht\\a81d537_c5e81ff_691db988\\Lib\\queue.py"
+M eT:"get"
+M eU:"self.not_empty.wait()"
+TBE eS|171|eT|eU
+TBV ew|eQ|eR
+M eV:"block"
+M eW:"bool"
+M eX:"True"
+TBV eV|eW|eX
+TBV aL|Y|Z
+M eY:"wait"
+M eZ:"waiter.acquire()"
+TBE et|355|eY|eZ
+M e0:"Condition"
+M e1:"<Condition(<unlocked _thread.lock object at 0x00000190E23A2840>, 1)>"
+TBV ew|e0|e1
+TBV aL|Y|Z
+M e2:"waiter"
+M e3:"lock"
+M e4:"<locked _thread.lock object at 0x00000190E273EB00>"
+TBV e2|e3|e4
+M e5:"saved_state"
+TBV e5|Y|Z
+M e6:"gotit"
+M e7:"False"
+TBV e6|eW|e7
+ETD 52.422
+M e8:"MainThread|Thread ID: 5808 (non daemon)"
+STD e8|52.422
+M e9:"C:\\ProgramData\\sema4ai\\ht\\a81d537_c5e81ff_691db988\\Lib\\site-packages\\robocorp\\log\\__init__.py"
+M fa:"process_snapshot"
+M fb:"robo_logger.process_snapshot()"
+TBE e9|270|fa|fb
+M fc:"logger_instances"
+M fd:"{<robocorp.log._robo_logger._RoboLogger object at 0x00000190E2363350>: 1, <robocorp.log._robo_logger._RoboLogger object at 0x00000190E23ABB30>: 1}"
+TBV fc|s|fd
+M fe:"robo_logger"
+M ff:"_RoboLogger"
+M fg:"<robocorp.log._robo_logger._RoboLogger object at 0x00000190E2363350>"
+TBV fe|ff|fg
+M fh:"C:\\ProgramData\\sema4ai\\ht\\a81d537_c5e81ff_691db988\\Lib\\site-packages\\robocorp\\log\\_robo_logger.py"
+M fi:"new_func"
+M fj:"return func(self, *args, **kwargs)"
+TBE fh|20|fi|fj
+TBV ew|ff|fg
+TBV o|p|q
+TBV r|s|t
+M fk:"func"
+M fl:"function"
+M fm:"<function _RoboLogger.process_snapshot at 0x00000190E2384C20>"
+TBV fk|fl|fm
+M fn:"return self._robot_output_impl.process_snapshot(hide_vars)"
+TBE fh|416|fa|fn
+TBV ew|ff|fg
+M fo:"hide_vars"
+TBV fo|eW|e7
+M fp:"C:\\ProgramData\\sema4ai\\ht\\a81d537_c5e81ff_691db988\\Lib\\site-packages\\robocorp\\log\\_robo_output_impl.py"
+M fq:"self._dump_threads(hide_vars)"
+TBE fp|748|fa|fq
+M fr:"_RoboOutputImpl"
+M fs:"<robocorp.log._robo_output_impl._RoboOutputImpl object at 0x00000190E2362180>"
+TBV ew|fr|fs
+TBV fo|eW|e7
+TBV eK|eL|eM
+M ft:"entry_id"
+M fu:"'ps_0'"
+TBV ft|V|fu
+M fv:"entry_type"
+M fw:"'process_snapshot'"
+TBV fv|V|fw
+M fx:"psutil"
+M fy:"<module 'psutil' from 'C:\\\\ProgramData\\\\sema4ai\\\\ht\\\\a81d537_c5e81ff_691db988\\\\Lib\\\\site-packages\\\\psutil\\\\__init__.py'>"
+TBV fx|eL|fy
+M fz:"AccessDenied"
+M fA:"type"
+M fB:"<class 'psutil.AccessDenied'>"
+TBV fz|fA|fB
+M fC:"NoSuchProcess"
+M fD:"<class 'psutil.NoSuchProcess'>"
+TBV fC|fA|fD
+M fE:"ZombieProcess"
+M fF:"<class 'psutil.ZombieProcess'>"
+TBV fE|fA|fF
+M fG:"curr_process"
+M fH:"Process"
+M fI:"psutil.Process(pid=21276, name='python.exe', status='running', started='14:42:02')"
+TBV fG|fH|fI
+M fJ:"log_info"
+M fK:"<function _RoboOutputImpl.process_snapshot.<locals>.log_info at 0x00000190E5B86B60>"
+TBV fJ|fl|fK
+M fL:"memory_info"
+M fM:"'Total: 31.9 G, Available: 18.9 G, Used: 40.7 %'"
+TBV fL|V|fM
+M fN:"child_i"
+M fO:"0"
+TBV fN|M|fO
+M fP:"child"
+TBV fP|fH|fI
+M fQ:"'python.exe'"
+TBV ax|V|fQ
+M fR:"status"
+M fS:"'running'"
+TBV fR|V|fS
+M fT:"create_time"
+M fU:"'14:42:02'"
+TBV fT|V|fU
+M fV:"ppid"
+M fW:"'27792'"
+TBV fV|V|fW
+M fX:"cmdline"
+M fY:"'C:\\\\ProgramData\\\\sema4ai\\\\ht\\\\a81d537_c5e81ff_691db988\\\\python.exe -m robocorp.tasks run c:\\\\Users\\\\PerezLai\\\\Desktop\\\\RPA\\\\my-news-robot\\\\tasks.py -t minimal_task'"
+TBV fX|V|fY
+M fZ:"rss"
+M f0:"'100.8 M'"
+TBV fZ|V|f0
+M f1:"vms"
+M f2:"'81.9 M'"
+TBV f1|V|f2
+M f3:"proc_memory_info"
+M f4:"pmem"
+M f5:"pmem(rss=105660416, vms=85831680, num_page_faults=49055, peak_wset=106262528, wset=105660416, peak_paged_pool=237848, paged_pool=223640, peak_nonpaged_pool=102628, nonpaged_pool=32688, pagefile=85831680, peak_pagefile=86589440, private=85831680)"
+TBV f3|f4|f5
+M f6:"'Current Process: python.exe (pid: 21276, status: running)\\nCommand Line: C:\\\\ProgramData\\\\sema4ai\\\\ht\\\\a81d537_c5e81ff_691db988\\\\python.exe -m robocorp.tasks run c:\\\\Users\\\\PerezLai\\\\Desktop\\\\RPA\\\\my-news-robot\\\\tasks.py -t minimal_task\\nStarted: 14:42:02\\nParent pid: 27792\\nResident Set Size: 100.8 M\\nVirtual Memory Size: 81.9 M'"
+TBV bD|V|f6
+M f7:"_dump_threads"
+M f8:"stack.append((f, f.f_lineno))"
+TBE fp|769|f7|f8
+TBV ew|fr|fs
+TBV fo|eW|e7
+M f9:"thread_id"
+M ga:"5808"
+TBV f9|M|ga
+M gb:"frame"
+M gc:"<frame at 0x00000190E60A7230, file 'C:\\\\ProgramData\\\\sema4ai\\\\ht\\\\a81d537_c5e81ff_691db988\\\\Lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_output_impl.py', line 773, code _dump_threads>"
+TBV gb|gb|gc
+M gd:"thread"
+M ge:"_MainThread"
+M gf:"<_MainThread(MainThread, started 5808)>"
+TBV gd|ge|gf
+M gg:"title"
+M gh:"'MainThread|Thread ID: 5808 (non daemon)'"
+TBV gg|V|gh
+M gi:"f"
+M gj:"<frame at 0x00000190E623A3F0, file 'C:\\\\ProgramData\\\\sema4ai\\\\ht\\\\a81d537_c5e81ff_691db988\\\\Lib\\\\site-packages\\\\robocorp\\\\tasks\\\\_commands.py', line 494, code run>"
+TBV gi|gb|gj
+M gk:"stack"
+M gl:"[(<frame at 0x00000190E61439F0, file 'C:\\\\ProgramData\\\\sema4ai\\\\ht\\\\a81d537_c5e81ff_691db988\\\\Lib\\\\site-packages\\\\robocorp\\\\log\\\\__init__.py', line 270, code process_snapshot>, 270), (<frame at 0x00000190E60DEDC0, file 'C:\\\\ProgramData\\\\sema4ai\\\\ht\\\\a81d537_c5e81ff_691db988\\\\Lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_logger.py', line 20, code new_func>, 20), (<frame at 0x00000190E6086F80, file 'C:\\\\ProgramData\\\\sema4ai\\\\ht\\\\a81d537_c5e81ff_691db988\\\\Lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_logger.py', line 416, code process_snapshot>, 416), (<frame at 0x00000190E6166200, file 'C:\\\\ProgramData\\\\sema4ai\\\\ht\\\\a81d537_c5e81ff_691db988\\\\Lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_output_impl.py', line 748, code process_snapshot>, 748), (<frame at 0x00000190E60A7230, file 'C:\\\\ProgramData\\\\sema4ai\\\\ht\\\\a81d537_c5e81ff_691db988\\\\Lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_output_impl.py', line 773, code _dump_threads>, 769)]"
+TBV gk|2|gl
+ETD 52.475
+EPS 52.475
+ET u|e|52.532
+ER u|52.532
