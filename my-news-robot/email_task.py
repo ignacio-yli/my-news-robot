@@ -8,7 +8,7 @@ import smtplib
 def send_email(to_email, articles):
     subject = "Latest Research Articles"
     from_email = "my.news.robot123@gmail.com"
-    password = "bfcx bibl zxzo hafo"
+    password = "pswrd"
 
     body = format_email_content_html(articles)
 
